@@ -18,6 +18,7 @@ services:
             - MYSQL_DATABASE=squad5
             - MYSQL_USER=squad5
             - MYSQL_PASSWORD=squad5
+        command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_0900_ai_ci', '--skip-character-set-client-handshake']
     phpmyadmin:
         image: phpmyadmin/phpmyadmin:latest
         container_name: squad5-phpmyadmin
