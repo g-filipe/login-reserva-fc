@@ -3,7 +3,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "-03:00";
 
-
 --
 -- Estrutura para tabela USUARIO
 --
@@ -44,11 +43,11 @@ COMMIT;
 START TRANSACTION;
 
 --
--- Estrutura para tabela AGENDASP - 1 para escritorio SP e 2 para escritorio Santos. 
+-- Estrutura para tabela AGENDA - 1 para escritorio SP e 2 para escritorio Santos. 
 -- 'confirmado' inicia como true e se for cancelada a reserva muda para false
 --
-CREATE TABLE AGENDASP (
-  id_reservaSP int NOT NULL,
+CREATE TABLE AGENDA (
+  id_reserva int NOT NULL,
   id_usuario int NOT NULL,
   escritorio int DEFAULT 1,
   dia int NOT NULL,
@@ -59,41 +58,12 @@ CREATE TABLE AGENDASP (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- estabelece o índice para a tabela agendasp e implementa auto_increment no primary
+-- estabelece o índice para a tabela agenda e implementa auto_increment no primary
 --
-ALTER TABLE AGENDASP
-  ADD PRIMARY KEY (id_reservaSP);
+ALTER TABLE AGENDA
+  ADD PRIMARY KEY (id_reserva);
 
-  ALTER TABLE AGENDASP
-  MODIFY id_reservaSP int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
-
-COMMIT;
-
-START TRANSACTION;
-
---
--- Estrutura para tabela AGENDASANTOS - 1 para escritorio SP e 2 para escritorio Santos. 
--- 'confirmado' inicia como true e se for cancelada a reserva muda para false
---
-
-CREATE TABLE AGENDASANTOS (
-  id_reservaSantos int NOT NULL,
-  id_usuario int NOT NULL,
-  escritorio int DEFAULT 2,
-  dia int NOT NULL,
-  mes int NOT NULL,
-  ano int NOT NULL,
-  mesa int NOT NULL,
-  confirmado boolean DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- estabelece o índice para a tabela agendasantos e implementa auto_increment no primary
---
-ALTER TABLE AGENDASANTOS
-  ADD PRIMARY KEY (id_reservaSantos);
-
-  ALTER TABLE AGENDASANTOS
-  MODIFY id_reservaSantos int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  ALTER TABLE AGENDA
+  MODIFY id_reserva int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 COMMIT;
