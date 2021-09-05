@@ -1,0 +1,115 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'calibri';
+  font-size: 12px;
+  color: rgb(54, 53, 126);
+  font-weight: regular;
+  text-decoration: none;
+  
+}
+
+.container {
+
+  background:rgb(254, 68, 0);
+  height: 100vh;
+  width: 100vw;
+  display: flex;    
+  justify-content: center;
+ 
+}
+
+ 
+.card{
+  
+/* padding: 1.5rem; */
+flex-direction: column;
+display: flex;
+justify-content: center;
+
+}
+
+.figure{
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+img{
+
+  max-width: 150px;
+
+}
+
+.dados input{
+  
+  width: 200px;
+  height: 35px;
+  
+  
+  text-align: center;
+  padding: .7rem .7rem;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+  border: 1px solid #36357E;
+  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+
+  
+}
+
+.dados #senha{
+  
+  margin-top: .5rem;
+
+}
+
+/* .options{
+
+  font-weight: 600; 
+  margin-top: 1rem;
+  display: flex; 
+  justify-content: center; 
+  
+}
+
+
+.options label{    
+      
+  margin-right: 40%;       
+} */
+
+
+
+.button{
+  /* width: 170px; */
+  /* height: 35px; */
+  display: flex;
+  justify-content: center;
+}
+
+button{
+
+width: 170px;
+height: 35px; 
+margin-top: 2rem;
+padding: .5rem .5rem;
+/* width: 100%; */
+border: none;
+border-radius: 2rem;
+cursor: pointer;
+background-color: rgb(54, 53, 126);
+color: #fff;
+transition: all .2 ease-out;
+
+
+}
+
+button :hover {
+
+  background-color: #fff;
+  color: rgb(54, 53, 126);;
+}
