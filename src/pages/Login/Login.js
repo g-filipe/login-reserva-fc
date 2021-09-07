@@ -17,7 +17,7 @@ function Login () {
     return (
         <div className="login">
             <div className="login-logo">
-                <img src = "https://github.com/g-filipe/sources/blob/main/times-fcamara-blog.png?raw=true" alt="Pessoas reunidas em ambiente de trabalho" />
+                <img src = "https://github.com/g-filipe/sources/blob/main/opt2-ilustracao-login.png?raw=true" alt="Duas mulheres e um calendário ilustrado" />
             </div>
             <div className="login-right">
                 <h1>Acesse sua conta</h1>
