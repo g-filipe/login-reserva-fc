@@ -18,45 +18,16 @@ function Login () {
     return (
         <div className="login">
             <div className="login-logo">
-                <img src = "https://github.com/g-filipe/sources/blob/main/times-fcamara-blog.png?raw=true" alt="Pessoas reunidas em ambiente de trabalho" />
+                <img src = "https://github.com/g-filipe/sources/blob/main/servicos-cloud%20(1).png?raw=true" alt="Pessoas reunidas em ambiente de trabalho" />
             </div>
             <div className="login-right">
-                <h1>Acesse sua conta</h1>
+                <h4>Neque porro quisquam est qui dolorem ipsum</h4>
+                <h1>Dolor sittconsectetur, adipisci &#38; velit</h1>
+                <p>porro quisquam est qui dolorem ipsum quia dolor sit</p>
 
-                <div className="login-loginInputEmail">
-                    <MdEmail />
-                    <input 
-                    type="text"
-                    placeholder="Digite seu email"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                    />
-                </div>
-                <div className="login-loginInputPassword">
-                    <MdLock />
-                    <input 
-                    type={show ? "text" : "password"}
-                    placeholder="Digite sua senha"
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                    />
-                    <div className="login-eye">
-                        {show ? (
-                           <HiEye
-                           
-                           onClick={handleClick}
-                           />
-                        ) : (
-                            <HiEyeOff 
-                            onClick={handleClick}
-                            />
-                            
-                        )}
-                    </div>
-                </div>
-
+                
                 <button type="submit">
-                    Entrar
+                        FAÇA AQUI A SUA RESERVA
                 </button>
             </div>
         </div>

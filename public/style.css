@@ -1,32 +1,36 @@
-/*.header-fc{
+.header-fc{
     display:flex;
     flex-direction: row;
     align-items: center;
     height: 68px;
-    background:#4b4fa1;
+    background:transparent;
     
 }
 
 header .logo{
-    margin-left:55px;
-    margin-top: 4px;
-    height: 34px
+    margin-left:150px;
+    margin-top: 10px;
+    height: 17px;
+    width: 80px;
+    
 }
 
-/*nav{
+nav{
     margin-left: 152px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold ;
     border: none;
+    margin-top: 10px;
 } 
-/*header nav a{
+header nav a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     margin-right: 10px;
     background-color: transparent;
+    justify-content: space-between;
 }
 
 header nav a:hover{
-    color:#AAA; ;
-}*/
+    color:#fc6027; ;
+}
