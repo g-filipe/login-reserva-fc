@@ -7,10 +7,11 @@
 }
 
 .spa-home-logo img{
-  width: 580px;
-  height: 400px;
+  width: 680px;
+  height: 500px;
   border-radius: 25px;
   border-bottom: 300px;
+  margin-left: 100px;
 }
 
 .spa-home-right { 
@@ -20,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 30px;
     padding: 20px;
     width: 500px;
     height: 350px;
@@ -31,37 +32,46 @@
     font-family: 'Montserrat';
     font-size: 35px;
     background: transparent;
-    margin-bottom: 15px;
-    color: #FC6027;
-    text-align: center;
+    margin-bottom: 5px;
+    color: #FE4400;
+    text-align:left;
 }
 
 .spa-home-right h4{
     font-family: 'Montserrat';
     font-size: 14px;
     margin-top: 25px;
-    margin-bottom: 15px;
-    color: #000;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    color: #303033;
+    text-align: justify;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .spa-home-right p{
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+    margin-right: 220px;
     color: #000;
+    text-align:left;
 }
 
 .spa-home-right button {
-    width:450px;
-    align-items: center;
+    width:400px;
+    height: 60px;
+    align-items: left;
     background-color: #FC6027;
     color:#fff;
     font-weight:500;
-    height: 50px;
-    border-radius: 5px;
+    font-family: 'Montserrat';
+    
+    border-radius: 8px;
     font-size: 16px;
     margin-bottom: 20px;
+    margin-right:105px;
     border: none;
     outline-width: 0;
 }
