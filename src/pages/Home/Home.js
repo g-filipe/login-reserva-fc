@@ -4,7 +4,7 @@ const Home = () =>
 
     <div className="spa-home">
         <div className="spa-home-logo">
-            <img src = "https://github.com/g-filipe/sources/blob/main/servicos-cloud%20(1).png?raw=true" alt="Pessoas reunidas em ambiente de trabalho" />
+            <img src = "https://github.com/g-filipe/sources/blob/main/greeting.jpg?raw=true" alt="Pessoas reunidas em ambiente de trabalho" />
         </div>
         <div className="spa-home-right">
             <h4>Neque porro quisquam est qui dolorem ipsum</h4>

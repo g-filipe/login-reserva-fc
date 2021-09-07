@@ -7,14 +7,14 @@
 }
 
 .spa-home-logo img{
-  width: 440px;
+  width: 580px;
   height: 400px;
   border-radius: 25px;
   border-bottom: 300px;
 }
 
 .spa-home-right { 
-    background-color: #E5E5E5;
+    background-color: transparent;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
