@@ -12,9 +12,9 @@ const Home = () =>
             <p>porro quisquam est qui dolorem ipsum quia dolor sit</p>
 
             
-            <button type="submit">
+            <a href="http://localhost:3001/login"><button type="submit">
                     FAÇA AQUI A SUA RESERVA
-            </button>
+            </button></a>
         </div>
     </div>
 
