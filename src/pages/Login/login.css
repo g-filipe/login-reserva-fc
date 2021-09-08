@@ -7,10 +7,11 @@
 }
 
 .login-logo img{
-  width: 620px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
   border-radius: 25px;
-  margin-left:80px;
+  align-items: center;
+  padding:20px;
 }
 
 .login-right { 
