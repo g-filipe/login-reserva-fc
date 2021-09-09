@@ -1,27 +1,43 @@
 export const MenuItems = [
     {
-        title: 'Home',
-        url: '#',
-        cName: 'nav-links'
+        title: "quem somos",
+        url: 'https://www.fcamara.com.br/quem-somos',
+        cName: 'nav-link-item'
     },
     {
-        title: 'Services',
+        title: "nossa atuação",
         url: '#',
-        cName: 'nav-links'
+        cName: 'nav-link-item'
     },
     {
-        title: 'Products',
-        url: '#',
-        cName: 'nav-links'
+        title: 'cases',
+        url: 'https://www.fcamara.com.br/casos-de-sucesso',
+        cName: 'nav-link-item'
     },
     {
-        title: 'Contact',
-        url: '#',
-        cName: 'nav-links'
+        title: 'carreira',
+        url: 'https://jobs.kenoby.com/fcamara/',
+        cName: 'nav-link-item'
     },
     {
-        title: 'Area do Colaborador',
-        url: '#',
-        cName: 'nav-links-mobile'
+        title: 'programa de formação',
+        url: 'https://digital.fcamara.com.br/programadeformacao',
+        cName: 'nav-link-item'
+    },
+    {
+        title: 'blog',
+        url: 'https://blog.fcamara.com.br/',
+        cName: 'nav-link-item'
+    },
+    {
+        title: 'contato',
+        url: 'https://www.fcamara.com.br/contato',
+        cName: 'nav-link-item'
+    },
+    {
+        title: 'sign in',
+        url: 'https://www.fcamara.com.br/contato',
+        cName: 'nav-link-item-mobile'
     }
 ]
+

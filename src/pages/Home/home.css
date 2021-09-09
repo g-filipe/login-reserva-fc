@@ -81,3 +81,82 @@
     color: #EFF2F5;
     cursor: pointer;
 }
+
+
+@media(max-width: 1115px) {
+    
+    .spa-home-logo {
+        display: none;
+    }
+
+         
+    .spa-home-right h1{
+        font-family: 'Montserrat';
+        font-size: 50px;
+        background: transparent;
+        margin-bottom: 5px;
+        color: #FE4400;
+        text-align:left;
+        
+    }
+    
+   .spa-home-right p{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 220px;
+        color: #000;
+        text-align:left;
+    }
+    
+    .spa-home-right button {
+        width:400px;
+        height: 60px;
+        align-items: right;
+        background-color: #FC6027;
+        color:#fff;
+        font-weight:500;
+        font-family: 'Montserrat';
+        float: right;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-right:105px;
+        border: none;
+        outline-width: 0;
+    } 
+  
+}
+
+@media(max-width: 480px) {
+    
+    .spa-home-logo {
+        display: none;
+    }
+
+   .spa-home{
+
+       display: flex;
+       max-width: 80px;
+       flex-wrap: wrap;
+    }
+    
+    .spa-home-right button {
+        width:400px;
+        height: 60px;
+        align-items: right;
+        background-color: #FC6027;
+        color:#fff;
+        font-weight:500;
+        font-family: 'Montserrat';
+        float: right;
+        border-radius: 8px;
+        font-size: 16px;
+        margin: 0 auto;
+        border: none;
+        outline-width: 0;
+    } 
+  
+}
+

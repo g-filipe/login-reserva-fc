@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
 import { MdEmail, MdLock } from "react-icons/md";
+import Navbar from '../../components/Navbar/Navbar';
 import { HiEye, HiEyeOff  } from "react-icons/hi";
 
 
@@ -15,6 +16,12 @@ function Login () {
     }
 
     return (
+
+        
+        <div>
+
+        <Navbar />
+
         <div className="login">
             <div className="login-logo">
                 <img src = "https://github.com/g-filipe/sources/blob/main/opt2-ilustracao-login.png?raw=true" alt="Duas mulheres e um calendário ilustrado" />
@@ -41,16 +48,16 @@ function Login () {
                     />
                     <div className="login-eye">
                         {show ? (
-                           <HiEye
-                           
-                           onClick={handleClick}
-                           />
-                        ) : (
-                            <HiEyeOff 
+                            <HiEye
+                            
                             onClick={handleClick}
                             />
-                            
-                        )}
+                            ) : (
+                                <HiEyeOff 
+                                onClick={handleClick}
+                                />
+                                
+                                )}
                     </div>
                 </div>
 
@@ -59,6 +66,7 @@ function Login () {
                 </button>
             </div>
         </div>
+                                </div>
     )
 }
 
