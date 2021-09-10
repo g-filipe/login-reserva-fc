@@ -22,7 +22,7 @@ const Home = () =>
             <p>porro quisquam est qui dolorem ipsum quia dolor sit</p>
 
             
-            <a href="http://localhost:3001/login"><button type="submit">
+            <a href="http://localhost:3000/login"><button type="submit">
                     FAÇA AQUI A SUA RESERVA
             </button></a>
         </div>
