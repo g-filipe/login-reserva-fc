@@ -4,12 +4,86 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', 'calibri';
-  font-size: 12px;
-  color: rgb(54, 53, 126);
+  font-size: 1px;
+  color: #FE4400;
   font-weight: regular;
   text-decoration: none;
   
 }
+
+.container {
+  display: none;
+}
+
+.spa-home-c{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.spa-home-logo-c img{
+width: 680px;
+
+}
+
+.spa-home-right-c { 
+
+  /* background-color: transparent; */
+  /* border-radius: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  /* padding: 20px; */
+  width: 30%;
+  /* height: 350px; */
+  /* border-radius: 10px; */
+ 
+}
+
+.spa-home-right-c h1{
+  font-size: 30px;
+  background: transparent;
+  margin-bottom: 40px;
+  color: #FE4400;
+  text-align:left;
+}
+
+.spa-home-right-c h4{
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  /* margin-right: 300px; */
+  color: #303033;
+  text-align: left;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+}
+
+/* .spa-home-right p{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 220px;
+  color: #000;
+  text-align:left;
+} */
+
+
+.spa-home-right-c button:hover {
+  background-color: #6063AC;
+  color: #EFF2F5;
+  cursor: pointer;
+}
+
+
+@media(max-width: 994px){
 
 .container {
 
@@ -21,6 +95,9 @@
  
 }
 
+.spa-home-c{
+  display: none;
+}
  
 .card{
   
@@ -35,16 +112,12 @@ justify-content: center;
 
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
-
-img{
-
-  max-width: 150px;
 
 }
 
-.dados input{
+/* .dados input{
   
   width: 200px;
   height: 35px;
@@ -64,7 +137,7 @@ img{
   
   margin-top: .5rem;
 
-}
+} */
 
 /* .options{
 
@@ -83,9 +156,9 @@ img{
 
 
 
-.button{
-  /* width: 170px; */
-  /* height: 35px; */
+/* .button{
+  width: 170px;
+  height: 35px;
   display: flex;
   justify-content: center;
 }
@@ -96,7 +169,7 @@ width: 170px;
 height: 35px; 
 margin-top: 2rem;
 padding: .5rem .5rem;
-/* width: 100%; */
+width: 100%;
 border: none;
 border-radius: 2rem;
 cursor: pointer;
@@ -111,4 +184,4 @@ button :hover {
 
   background-color: #fff;
   color: rgb(54, 53, 126);;
-}
+} */

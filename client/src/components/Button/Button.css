@@ -1,0 +1,92 @@
+
+:root {
+    --solido: #FE4400;
+    --vazado: transparent;
+}
+
+.btn{
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+font-size: 14px;
+cursor: pointer;
+transition: all 0.2s ease-out;
+border-radius: 8px;
+box-sizing: border-box;
+border: 1px solid var(--solido);
+}
+
+/* Cores */
+
+.btn--solido{
+    background-color: var(--solido);
+    border: 1px solid #FE4400;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn--vazado{
+    background-color: var(--vazado);    
+    color: var(--solido);
+}
+
+/*Tamanhos*/
+
+.btn--g{
+    width: 327px;
+    height: 48px;
+}
+
+.btn--m{
+    width: 328px;
+    height: 40px;
+}
+
+.btn--p{
+    width: 232px;
+    height: 40px;
+}
+
+/* button{
+    width:400px;
+    height: 60px;
+    align-items: left;
+    background-color: #FC6027;
+    color:#fff;
+    font-weight:500;
+    font-family: 'Montserrat';
+    
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right:105px;
+    border: none;
+    outline-width: 0;
+} */
+
+
+
+
+/* .spa-home-right button {
+    width:400px;
+    height: 60px;
+    align-items: left;
+    background-color: #FC6027;
+    color:#fff;
+    font-weight:500;
+    font-family: 'Montserrat';
+    
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right:105px;
+    border: none;
+    outline-width: 0;
+}
+
+.spa-home-right button:hover {
+    background-color: #6063AC;
+    color: #EFF2F5;
+    cursor: pointer;
+} */

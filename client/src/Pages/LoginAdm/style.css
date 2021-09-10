@@ -1,19 +1,18 @@
 
-*{
-  margin: 0;
+.App{
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', 'calibri';
-  font-size: 12px;
-  color: rgb(54, 53, 126);
+  font-size: 14px;
   font-weight: regular;
   text-decoration: none;
-  
+  color: #FE4400;
 }
 
 .container {
 
-  background:rgb(254, 68, 0);
+  background:#FFF;
   height: 100vh;
   width: 100vw;
   display: flex;    
@@ -21,95 +20,67 @@
  
 }
 
- 
 .card{
   
-/* padding: 1.5rem; */
-flex-direction: column;
-display: flex;
-justify-content: center;
-
-}
-
-.figure{
-
+  flex-direction: column;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  
+  }
+ 
+.figure img{
+
+    display: flex;
+    max-width: 187px;
+  }    
+    
+.dados{
+  
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+   
 }
-
-img{
-
-  max-width: 150px;
-
-}
-
-.dados input{
-  
-  width: 200px;
-  height: 35px;
-  
-  
-  text-align: center;
-  padding: .7rem .7rem;
-  border: none;
-  border-radius: 2rem;
-  margin-bottom: .5rem;
-  border: 1px solid #36357E;
-  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
-
-  
-}
-
-.dados #senha{
-  
-  margin-top: .5rem;
-
-}
-
-/* .options{
-
-  font-weight: 600; 
-  margin-top: 1rem;
-  display: flex; 
-  justify-content: center; 
-  
-}
-
-
-.options label{    
-      
-  margin-right: 40%;       
-} */
-
-
 
 .button{
-  /* width: 170px; */
-  /* height: 35px; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  
+  
+  
 }
 
-button{
+.options{
 
-width: 170px;
-height: 35px; 
-margin-top: 2rem;
-padding: .5rem .5rem;
-/* width: 100%; */
-border: none;
-border-radius: 2rem;
-cursor: pointer;
-background-color: rgb(54, 53, 126);
-color: #fff;
-transition: all .2 ease-out;
-
+  font-weight: 600; 
+  /* margin-top: 1rem; */
+  display: flex; 
+  justify-content: space-between; 
 
 }
 
-button :hover {
+.options2{
 
-  background-color: #fff;
-  color: rgb(54, 53, 126);;
+  font-weight: 600; 
+  margin-top: 21px;
+  display: flex; 
+  justify-content: center; 
+
 }
+
+label{
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FE4400;
+  /* margin-right: 50; */
+}
+
+input[type=checkbox] {
+  
+  transform: scale(1.5);
+  /* margin-left: 15px; */
+}
+
