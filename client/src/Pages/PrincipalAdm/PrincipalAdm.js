@@ -1,7 +1,7 @@
 import './PrincipalAdm.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
-import ajustes from '../../assets/servicos-digital.png'
+import img from '../../assets/servicos-digital.png'
 import { Bell } from '../../assets/Icons/Bell/bell';
 
 const PrincipalAdm = () => {
@@ -22,12 +22,12 @@ const PrincipalAdm = () => {
             <div className="adm-spa-home">
 
                 <div className="adm-spa-home-logo">
-                    <img src={ajustes} alt="Pessoas reunidas em ambiente de trabalho" />
+                    <img src={img} alt="Pessoas reunidas em ambiente de trabalho" />
                 </div>
                 <div className="adm-spa-home-right">
                     <div className='ola'>
 
-                        <h4>Olá, Sangue Laranja</h4>
+                        <h1>Olá, Sangue Laranja</h1>
 
                     </div>
 

@@ -1,4 +1,4 @@
-import './style.css';
+import './LoginAdm.css';
 import logo from '../../assets/F_LARANJA.png'
 import { Input } from '../../components/Input/Input';
 import { Button } from '../../components/Button/Button';

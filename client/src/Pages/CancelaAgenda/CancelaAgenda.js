@@ -1,7 +1,7 @@
 import './CancelaAgenda.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
-import ajusting from '../../assets/blog_programador4.png'
+import img from '../../assets/blog_programador4.png'
 import { Check } from '../../assets/Icons/Check/Check';
 
 const CancelaAgenda = () => {
@@ -23,7 +23,7 @@ const CancelaAgenda = () => {
       <div className="cancagenda-spa-home">
 
         <div className="cancagenda-spa-home-logo">
-          <img src={ajusting} alt="Pessoas reunidas em ambiente de trabalho" />
+          <img src={img} alt="Pessoas reunidas em ambiente de trabalho" />
         </div>
         <div className="cancagenda-spa-home-right">
         <div className='cancagenda-figure'>

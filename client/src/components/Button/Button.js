@@ -5,7 +5,8 @@ import './Button.css';
 const STYLES =[
   "btn--solido",
   "btn--vazado",
-  "btn--icon"
+  "btn--icon",
+  "btn--select"
 ];
 
 const SIZES =[

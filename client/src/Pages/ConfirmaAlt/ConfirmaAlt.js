@@ -1,7 +1,7 @@
 import './ConfirmaAlt.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
-import ajusting from '../../assets/blog_programador4.png'
+import img from '../../assets/blog_programador4.png'
 import { Check } from '../../assets/Icons/Check/Check';
 
 const ConfirmaAlt = () => {
@@ -23,35 +23,35 @@ const ConfirmaAlt = () => {
       <div className="confalt-spa-home">
 
         <div className="confalt-spa-home-logo">
-          <img src={ajusting} alt="Pessoas reunidas em ambiente de trabalho" />
+          <img src={img} alt="Pessoas reunidas em ambiente de trabalho" />
         </div>
         <div className="confalt-spa-home-right">
-        <div className='confalt-figure'>
+          <div className='confalt-figure'>
 
-<Check />
+            <Check />
 
-</div>
+          </div>
 
-<div className='confalt-text'>
+          <div className='confalt-text'>
 
-<h1> As taxas de ocupação foram atualizadas! </h1>
-<h4> Em breve os Colaboradores receberão uma notificação.</h4>
+            <h1> As taxas de ocupação foram atualizadas! </h1>
+            <h4> Em breve os Colaboradores receberão uma notificação.</h4>
 
-</div>
+          </div>
 
-<div className='confalt-btn'>
+          <div className='confalt-btn'>
 
 
-<Button
-buttonSize='btn--m'
-> Voltar à página inicial </Button>
+            <Button
+              buttonSize='btn--m'
+            > Voltar à página inicial </Button>
 
-<Button
-buttonStyle='btn--vazado'
-buttonSize='btn--m'
-> Desfazer </Button>
+            <Button
+              buttonStyle='btn--vazado'
+              buttonSize='btn--m'
+            > Desfazer </Button>
 
-</div>
+          </div>
 
         </div>
       </div>

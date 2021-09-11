@@ -107,7 +107,7 @@
 
     .NavbarItems{
        position: absolute;
-       top: 20px;
+       top: 64px;
        display: flex;
        /* align-items: center; */
        box-sizing: border-box;
@@ -184,6 +184,13 @@
         top: 0;        
     }
     
+    .fas.fa-bars{
+        display: flex;
+        text-align: right;
+        position: absolute;
+        right: 20px;           
+        top: 0;        
+    }
 
 }
 

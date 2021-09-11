@@ -1,0 +1,138 @@
+
+.App{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'calibri';
+  font-size: 1px;
+  font-weight: regular;
+  text-decoration: none;  
+}
+
+.selunid-container{
+  display: none;
+}
+
+.selunid-spa-home{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+
+
+.selunid-spa-home-logo img{
+max-width: 800px;
+
+}
+
+.selunid-spa-home-right { 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 30px;
+  padding: 20px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.selunid-spa-home-right h1{
+  font-size: 35px;
+  background: transparent;
+  margin-bottom: 15px;
+  color: #FE4400;
+  text-align:center;
+}
+
+.selunid-figure{
+    
+  display: flex;
+  justify-content: center;
+        
+}
+
+.selunid-text h4{
+font-size: 20px;
+font-weight: 700;
+text-align: center;
+color: #2a2a2a;;
+margin-bottom: 20px;
+}
+
+.selunid-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+
+.selunid-spa-home-right button:hover {
+  background-color: #6063AC;
+  color: #EFF2F5;
+  cursor: pointer;
+}
+
+
+@media(max-width: 994px){
+
+  .App{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'calibri';
+    font-size: 1px;
+    font-weight: regular;
+    text-decoration: none;  
+  }
+
+  .selunid-spa-home{
+    display: none;
+  }
+
+  .selunid-container {
+    
+    background:#FFF;
+    height: 100vh;
+    width: 100vw;
+    display: flex;    
+    justify-content: center;
+    
+  }
+  
+  
+  .selunid-card{
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 204.98px ;
+  }
+  
+  .selunid-figure{
+    
+    display: flex;
+    justify-content: center;
+    
+        
+  }
+
+.selunid-text{
+  margin-top: 30.02px;
+  margin-bottom: 24px;
+  max-width: 327px;
+  max-height: 80px;
+}
+  
+.selunid-text h4{
+  font-size: 16px;
+  text-align: center;
+  color: #2a2a2a;;
+}
+  
+}
+  
+  
