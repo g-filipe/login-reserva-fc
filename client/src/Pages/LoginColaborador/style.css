@@ -25,7 +25,7 @@
 }
 
 .spa-home-logo-c img{
-width: 680px;
+width: 400px;
 
 }
 
@@ -37,7 +37,7 @@ width: 680px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 100px;
   /* padding: 20px; */
   width: 30%;
   /* height: 350px; */

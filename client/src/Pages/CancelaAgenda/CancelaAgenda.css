@@ -9,11 +9,11 @@
   text-decoration: none;  
 }
 
-/* .container{
+.cancagenda-container{
   display: none;
-} */
+}
 
-.spa-home{
+.cancagenda-spa-home{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -22,71 +22,58 @@
   margin: 0 auto;
 }
 
-.spa-home-logo img{
-width: 680px;
-/* border-radius: 25px;
-border-bottom: 300px; */
-/* margin-left: 80px; */
+
+
+.cancagenda-spa-home-logo img{
+max-width: 800px;
+
 }
 
-.spa-home-right { 
+.cancagenda-spa-home-right { 
 
-  /* background-color: transparent; */
-  /* border-radius: 5px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
   margin-left: 30px;
   padding: 20px;
-  width: 30%;
-  /* height: 350px; */
+  width: 40%;
   border-radius: 10px;
 }
 
-.spa-home-right h1{
+.cancagenda-spa-home-right h1{
   font-size: 35px;
   background: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   color: #FE4400;
-  text-align:left;
+  text-align:center;
 }
 
-.spa-home-right h4{
-  font-size: 14px;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  /* margin-right: 300px; */
-  color: #303033;
-  text-align: left;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
+.cancagenda-figure{
+    
+  display: flex;
+  justify-content: center;
+        
 }
 
-/* .spa-home-right p{
-  font-family: 'Montserrat';
-  font-size: 16px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-right: 220px;
-  color: #000;
-  text-align:left;
-} */
+.cancagenda-text h4{
+font-size: 16px;
+text-align: center;
+color: #2a2a2a;;
+margin-bottom: 20px;
+}
 
-.spa-home-right button:hover {
+.cancagenda-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+
+.cancagenda-spa-home-right button:hover {
   background-color: #6063AC;
   color: #EFF2F5;
   cursor: pointer;
 }
-
-/* button {
-  line-height: 25px;
-}
-
-button::before {
-  content: {Bell};
-} */
 
 
 @media(max-width: 994px){
@@ -101,11 +88,11 @@ button::before {
     text-decoration: none;  
   }
 
-  .spa-home{
+  .cancagenda-spa-home{
     display: none;
   }
 
-  .container {
+  .cancagenda-container {
     
     background:#FFF;
     height: 100vh;
@@ -116,26 +103,34 @@ button::before {
   }
   
   
-  .card{
+  .cancagenda-card{
     
     flex-direction: column;
     display: flex;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    margin-top: 204.98px ;
   }
   
-  .figure img{
+  .cancagenda-figure{
     
     display: flex;
-    max-width: 187px;
+    justify-content: center;
     
+        
   }
+
+.cancagenda-text{
+  margin-top: 30.02px;
+  margin-bottom: 24px;
+  max-width: 327px;
+  max-height: 80px;
+}
   
-  img{
-    
-    max-width: 187px;
-    margin-bottom: 56px;
-  }
+.cancagenda-text h4{
+  font-size: 16px;
+  text-align: center;
+  color: #2a2a2a;;
+}
   
 }
   

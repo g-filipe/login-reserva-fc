@@ -3,7 +3,7 @@ import logo from '../../assets/F_LARANJA.png'
 import { Input } from '../../components/Input/Input';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
-import greeting from '../../assets/greeting.jpg'
+import calendario from '../../assets/calendario.png'
 
 const LoginColaborador = () => {
   return (
@@ -22,7 +22,7 @@ const LoginColaborador = () => {
       <div className="spa-home-c">
 
         <div className="spa-home-logo-c">
-          <img src={greeting} alt="Pessoas reunidas em ambiente de trabalho" />
+          <img src={calendario} alt="Pessoas reunidas em ambiente de trabalho" />
         </div>
         <div className="spa-home-right-c">
 

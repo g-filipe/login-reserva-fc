@@ -5,9 +5,11 @@ import './Button.css';
 const STYLES =[
   "btn--solido",
   "btn--vazado",
+  "btn--icon"
 ];
 
 const SIZES =[
+  "btn--gg",
   "btn--g",
   "btn--m",
   "btn--p"
@@ -21,7 +23,7 @@ export const Button = ({
     buttonSize}) => {
 
       const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-      const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+      const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
         return(
 

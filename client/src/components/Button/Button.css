@@ -31,7 +31,25 @@ border: 1px solid var(--solido);
     color: var(--solido);
 }
 
+.btn--icon{
+    background-color: #ffffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-left:10px; 
+}
+
 /*Tamanhos*/
+
+.btn--gg{
+    width: 375px;
+    height: 100px;
+}
 
 .btn--g{
     width: 327px;
