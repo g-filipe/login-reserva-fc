@@ -3,13 +3,17 @@ import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/home-intro-small.png'
 import { useState } from 'react';
-import { Dropdown } from '../../components/Dropdown/Dropdown';
+import { DropdownSP } from '../../components/Dropdown/DropdownSP.js';
+import { DropdownSantos } from '../../components/Dropdown/DropdownSantos.js';
 import { WarningModal } from '../../components/WarningModal/WarningModal';
 
 const Diretrizes = () => {
 
   const [selected, setSelected] = useState("");
+  const [selected2, setSelected2] = useState("");
 
+  const TotalSP = Math.round(selected*240/100);
+    
   const [openWarningModal, setOpenWarningModal] = useState(false);
 
   return (
@@ -87,14 +91,14 @@ const Diretrizes = () => {
       <tr>
 
         <td>São Paulo, SP</td>
-        <td><Dropdown selected={selected} setSelected={setSelected} /></td>
-        <td className='table-right'>240</td>
+        <td><DropdownSP selected={selected} setSelected={setSelected} /></td>
+        <td className='table-right'>{TotalSP}</td>
 
       </tr>
 
       <td>Santos, SP</td>
-      <td><Dropdown selected={selected} setSelected={setSelected} /></td>
-      <td className='table-right'>100</td>
+      <td><DropdownSantos selected2={selected2} setSelected2={setSelected2} /></td>
+      <td className='table-right'>{selected2}</td>
 
 
     </table>
@@ -180,14 +184,14 @@ const Diretrizes = () => {
               <tr>
 
                 <td>São Paulo, SP</td>
-                <td><Dropdown selected={selected} setSelected={setSelected} /></td>
-                <td className='table-right'>240</td>
+                <td><DropdownSP selected={selected} setSelected={setSelected} /></td>
+                <td className='table-right'>{TotalSP}</td>
 
               </tr>
 
               <td>Santos, SP</td>
-              <td><Dropdown selected={selected} setSelected={setSelected} /></td>
-              <td className='table-right'>100</td>
+              <td><DropdownSantos selected2={selected2} setSelected2={setSelected2} /></td>
+              <td className='table-right'>{selected2}</td>
 
 
             </table>
