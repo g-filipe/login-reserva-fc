@@ -35,7 +35,7 @@ margin-bottom: 16px;
 .btn--icon{
     background-color: #ffffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #000000;
+    color:#FE4400;
     font-size: 20px;
     font-weight: normal;
     text-align: center;
@@ -65,7 +65,7 @@ margin-bottom: 16px;
 
 .btn--g{
     width: 327px;
-    min-height: 48px;
+    height: 48px;
 }
 
 .btn--m{
@@ -78,45 +78,11 @@ margin-bottom: 16px;
     height: 40px;
 }
 
-/* button{
-    width:400px;
-    height: 60px;
-    align-items: left;
-    background-color: #FC6027;
-    color:#fff;
-    font-weight:500;
-    font-family: 'Montserrat';
-    
-    border-radius: 8px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-right:105px;
-    border: none;
-    outline-width: 0;
-} */
 
 
-
-
-/* .spa-home-right button {
-    width:400px;
-    height: 60px;
-    align-items: left;
-    background-color: #FC6027;
-    color:#fff;
-    font-weight:500;
-    font-family: 'Montserrat';
-    
-    border-radius: 8px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-right:105px;
-    border: none;
-    outline-width: 0;
-}
-
-.spa-home-right button:hover {
+.btn:hover {
     background-color: #6063AC;
     color: #EFF2F5;
     cursor: pointer;
-} */
+    border: none;
+} 

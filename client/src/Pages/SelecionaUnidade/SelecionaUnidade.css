@@ -78,15 +78,6 @@ margin-bottom: 20px;
 
 @media(max-width: 994px){
 
-  .App{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', 'calibri';
-    font-size: 1px;
-    font-weight: regular;
-    text-decoration: none;  
-  }
 
   .selunid-spa-home{
     display: none;
@@ -96,7 +87,6 @@ margin-bottom: 20px;
     
     background:#FFF;
     height: 100vh;
-    width: 100vw;
     display: flex;    
     justify-content: center;
     

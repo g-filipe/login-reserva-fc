@@ -1,5 +1,5 @@
 
-.App{
+.confalt-App{
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -96,7 +96,6 @@ margin-bottom: 20px;
     
     background:#FFF;
     height: 100vh;
-    width: 100vw;
     display: flex;    
     justify-content: center;
     

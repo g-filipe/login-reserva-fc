@@ -124,44 +124,12 @@
     top:60%
 } */
 
-@media(max-width: 1157px){
 
-  /* .feather.feather-bell{
-       
-    display: flex;
-    position: absolute;
-    top: 37%;
-}
-
-  .feather.feather-calendar{
-    display: flex;
-    position: absolute;
-    top:49%;
-}
-
-.feather.feather-sliders{
-    display: flex;
-    position: absolute;
-    top:61%;
-} */
-
-
-}
-  
 
   
   @media(max-width: 994px){
   
-    .App{
-      margin: 0 auto;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', 'calibri';
-      font-size: 1px;
-      font-weight: regular;
-      text-decoration: none;  
-    }
-  
+      
     .adm-spa-home{
       display: none;
     }
@@ -170,10 +138,9 @@
       
       background:#FFF;
       height: 100vh;
-      width: 100vw;
+      /* width: 100vw; */
       display: flex;    
       justify-content: center;
-      
     }
     
     
@@ -183,57 +150,9 @@
       display: flex;
       justify-content: flex-start;
       margin-top: 116px;
-      
     }
     
-    /* .ola h4{
-      font-size: 20px;
-      font-weight: 600;
-      color: #2a2a2a;
-      text-align: center;
-      margin-bottom: 12px;
-      margin-left: 0
-    
-    } */
-
-    /* .feather.feather-bell{
-       
-        display: flex;
-        position: absolute;
-        top: 20%;
-    }
-
-    .feather.feather-chevron-right{
-        display: flex;
-        margin-left: 60px;
-        margin-bottom: 12px;
-    }
-
-    .feather.feather-chevron-right2{
-        display: flex;
-        margin-left: 55px;
-        margin-bottom: 12px;
-    }
-
-    .feather.feather-chevron-right3{
-        display: flex;
-        margin-left: 170px;
-        margin-bottom: 12px;
-    }
-
-    .feather.feather-calendar{
-        display: flex;
-        position: absolute;
-        top:35%
-    }
-
-    .feather.feather-sliders{
-        display: flex;
-        position: absolute;
-        top:48%
-    } */
-
-        
+           
   }
     
     

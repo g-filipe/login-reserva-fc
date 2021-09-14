@@ -3,6 +3,7 @@ import logo from '../../assets/F_LARANJA.png'
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import greeting from '../../assets/greeting.jpg'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -28,9 +29,19 @@ const Home = () => {
         <div className="spa-home-right">
           <h4>BEM-VINDO, SANGUE LARANJA</h4>
           <h1>Para agendar seu horário, entre numas das áreas abaixo:</h1>
-          <Button> Colaborador </Button>
-          <Button> Administrador </Button>
-         
+
+          <Link to="/login-colaborador">
+
+            <Button> Colaborador </Button>
+
+          </Link>
+
+          <Link to="/login-adm">
+
+            <Button > Administrador </Button>
+
+          </Link>
+
         </div>
       </div>
 
@@ -50,8 +61,17 @@ const Home = () => {
 
           </div>
 
-          <Button> Colaborador </Button>
-          <Button> Administrador </Button>
+          <Link to="/login-colaborador">
+
+            <Button> Colaborador </Button>
+
+          </Link>
+
+          <Link to="/login-adm">
+
+            <Button> Administrador </Button>
+
+          </Link>
 
         </div>
       </div>

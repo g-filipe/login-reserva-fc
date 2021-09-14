@@ -54,7 +54,7 @@ const LoginColaborador = () => {
 
           </div>
 
-          <div className="options">
+          <div className="logcol-options">
 
             <div>
 
@@ -69,7 +69,7 @@ const LoginColaborador = () => {
           </div>
 
 
-          <div className='options2'>
+          <div className='logcol-options2'>
 
             <a href=''>Primeiro acesso? Clique aqui.</a>
 
@@ -117,7 +117,7 @@ const LoginColaborador = () => {
 
           </div>
 
-          <div className="options">
+          <div className="logcol-options">
 
             <div>
 
@@ -132,7 +132,7 @@ const LoginColaborador = () => {
           </div>
 
 
-          <div className='options2'>
+          <div className='logcol-options2'>
 
             <a href=''>Primeiro acesso? Clique aqui.</a>
 

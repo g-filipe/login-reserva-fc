@@ -3,10 +3,11 @@ import logo from '../../assets/F_LARANJA.png'
 import { Input } from '../../components/Input/Input';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
-
+import calendario from '../../assets/calendario.png'
 
 const LoginAdm = () => {
   return (
+
     <div className="App">
 
       <div>
@@ -15,17 +16,19 @@ const LoginAdm = () => {
 
       </div>
 
-      <div className='container'>
+      {/* WEB */}
 
-        <div className='card'>
 
-          <div className='figure'>
+      <div className="adm-spa-home-c">
 
-            <img src={logo} alt='logo Fcamara' />
+        <div className="adm-spa-home-logo-c">
+          <img src={calendario} alt="Pessoas reunidas em ambiente de trabalho" />
+        </div>
+        <div className="adm-spa-home-right-c">
 
-          </div>
+        <h1>Área do Administrador</h1>
 
-          <div className="dados">
+          <div className="adm-dados">
 
             <Input
 
@@ -45,13 +48,13 @@ const LoginAdm = () => {
 
           </div>
 
-          <div className="button">
+          <div className="adm-button">
 
             <Button> Entrar </Button>
 
           </div>
 
-          <div className="options">
+          <div className="adm-options">
 
             <div>
 
@@ -66,7 +69,70 @@ const LoginAdm = () => {
           </div>
 
 
-          <div className='options2'>
+          <div className='adm-options2'>
+
+            <a href=''>Primeiro acesso? Clique aqui.</a>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      {/* MOBILE */}
+
+      <div className='adm-container'>
+
+        <div className='adm-card'>
+
+          <div className='adm-figure'>
+
+            <img src={logo} alt='logo Fcamara' />
+
+          </div>
+
+          <div className="adm-dados">
+
+            <Input
+
+              placeholder= "E-mail/Usuario"
+              type="email"
+              inputStyle="input--vazado"
+              inputSize="input-g"
+            ></Input>
+
+            <Input
+
+              placeholder="Senha"
+              type="password"
+              inputStyle="input--vazado"
+              inputSize="input-g"
+            ></Input>
+
+          </div>
+
+          <div className="adm-button">
+
+            <Button> Entrar </Button>
+
+          </div>
+
+          <div className="adm-options">
+
+            <div>
+
+              <input type="checkbox"></input>
+
+              <label>Lembrar</label>
+
+            </div>
+
+            <a href=''>Esqueceu sua senha?</a>
+
+          </div>
+
+
+          <div className='adm-options2'>
 
             <a href=''>Primeiro acesso? Clique aqui.</a>
 

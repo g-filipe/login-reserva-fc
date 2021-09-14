@@ -1,0 +1,13 @@
+.NotFound{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NFtext{
+font-family: 'Montserrat', 'Calibri';
+font-size: 50px;
+margin: 20px
+}

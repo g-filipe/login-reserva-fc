@@ -6,14 +6,15 @@ import { useState } from 'react';
 import { DropdownSP } from '../../components/Dropdown/DropdownSP.js';
 import { DropdownSantos } from '../../components/Dropdown/DropdownSantos.js';
 import { WarningModal } from '../../components/WarningModal/WarningModal';
+import { Link } from 'react-router-dom';
 
 const Diretrizes = () => {
 
   const [selected, setSelected] = useState("");
   const [selected2, setSelected2] = useState("");
 
-  const TotalSP = Math.round(selected*240/100);
-    
+  const TotalSP = Math.round(selected * 240 / 100);
+
   const [openWarningModal, setOpenWarningModal] = useState(false);
 
   return (
@@ -32,98 +33,100 @@ const Diretrizes = () => {
 
         {/* Modal */}
 
-{openWarningModal && <WarningModal closeWarningModal={setOpenWarningModal}>
+        {openWarningModal && <WarningModal closeWarningModal={setOpenWarningModal}>
 
-<div className='w-modal-text'>
+          <div className='w-modal-text'>
 
-  <h1>Após confirmar, a porcentagem de ocupação das Unidades serão alteradas.
-  </h1>
-  <h2>Deseja mesmo continuar?</h2>
+            <h1>Após confirmar, a porcentagem de ocupação das Unidades serão alteradas.
+            </h1>
+            <h2>Deseja mesmo continuar?</h2>
 
-</div>
+          </div>
 
-<Button
-  buttonSize='btn--p'
-  buttonStyle='btn--solido'
->
-  Sim
-</Button>
+          <Link to='confirma-alt'>
 
-<Button
-  buttonSize='btn--p'
-  buttonStyle='btn--vazado'
-  onClick={() => setOpenWarningModal(false)}
->
-  Voltar
-</Button>
+            <Button
+              buttonSize='btn--p'
+              buttonStyle='btn--solido'
+            >Sim</Button>
 
-</WarningModal>}
+          </Link>
+
+          <Button
+            buttonSize='btn--p'
+            buttonStyle='btn--vazado'
+            onClick={() => setOpenWarningModal(false)}
+          >
+            Voltar
+          </Button>
+
+        </WarningModal>}
 
         <div className="dir-spa-home-logo">
           <img src={img} alt="Pessoas reunidas em ambiente de trabalho" />
         </div>
         <div className="dir-spa-home-right">
-        {/* <div className='dir-container'> */}
+          {/* <div className='dir-container'> */}
 
 
 
-<div className='dir-card'>
+          <div className='dir-card'>
 
 
-  <div className='dir-text'>
+            <div className='dir-text'>
 
-    <h1> Determine a capacidade limite de ocupação das Unidades</h1>
+              <h1> Determine a capacidade limite de ocupação das Unidades</h1>
 
-  </div>
+            </div>
 
-  <div className='dir-table'>
+            <div className='dir-table'>
 
-    <table className='table'>
+              <table className='table'>
 
-      <tr>
+                <tr>
 
-        <td>Unidade</td>
-        <td className='table-right'>%</td>
-        <td className='table-right'>Total</td>
+                  <td>Unidade</td>
+                  <td className='table-right'>%</td>
+                  <td className='table-right'>Total</td>
 
-      </tr>
+                </tr>
 
-      <tr>
+                <tr>
 
-        <td>São Paulo, SP</td>
-        <td><DropdownSP selected={selected} setSelected={setSelected} /></td>
-        <td className='table-right'>{TotalSP}</td>
+                  <td>São Paulo, SP</td>
+                  <td><DropdownSP selected={selected} setSelected={setSelected} /></td>
+                  <td className='table-right'>{TotalSP}</td>
 
-      </tr>
+                </tr>
 
-      <td>Santos, SP</td>
-      <td><DropdownSantos selected2={selected2} setSelected2={setSelected2} /></td>
-      <td className='table-right'>{selected2}</td>
-
-
-    </table>
-
-  </div>
-
-  <div className='dir-btn'>
-
-    <Button
-      buttonSize='btn--m'
-      onClick={() => { setOpenWarningModal(true); }}
-    > Atualizar Diretrizes </Button>
-
-    <Button
-      buttonStyle='btn--vazado'
-      buttonSize='btn--m'
-    > Voltar </Button>
-
-  </div>
+                <td>Santos, SP</td>
+                <td><DropdownSantos selected2={selected2} setSelected2={setSelected2} /></td>
+                <td className='table-right'>{selected2}</td>
 
 
-</div>
-</div>
+              </table>
 
-</div>
+            </div>
+
+            <div className='dir-btn'>
+
+              <Button
+                buttonSize='btn--m'
+                onClick={() => { setOpenWarningModal(true); }}
+              > Atualizar Diretrizes </Button>
+
+              <Button
+                buttonStyle='btn--vazado'
+                buttonSize='btn--m'
+              > Voltar </Button>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
       {/* </div> */}
 
 
@@ -143,12 +146,14 @@ const Diretrizes = () => {
 
           </div>
 
-          <Button
-            buttonSize='btn--p'
-            buttonStyle='btn--solido'
-          >
-            Sim
-          </Button>
+          <Link to='confirma-alt'>
+
+            <Button
+              buttonSize='btn--p'
+              buttonStyle='btn--solido'
+            >Sim</Button>
+
+          </Link>
 
           <Button
             buttonSize='btn--p'

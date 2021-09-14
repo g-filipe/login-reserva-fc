@@ -1,19 +1,19 @@
 
-.App{
+.calendar-App{
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', 'calibri';
-  font-size: 1px;
+  font-size: 16px;
   font-weight: regular;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
-.cancagenda-container{
+.calendar-container{
   display: none;
 }
 
-.cancagenda-spa-home{
+.calendar-spa-home{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -24,12 +24,12 @@
 
 
 
-.cancagenda-spa-home-logo img{
+.calendar-spa-home-logo img{
 max-width: 800px;
 
 }
 
-.cancagenda-spa-home-right { 
+.calendar-spa-home-right { 
 
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ max-width: 800px;
   border-radius: 10px;
 }
 
-.cancagenda-spa-home-right h1{
+.calendar-spa-home-right h1{
   font-size: 35px;
   background: transparent;
   margin-bottom: 15px;
@@ -49,32 +49,40 @@ max-width: 800px;
   text-align:center;
 }
 
-.cancagenda-figure{
+.calendar-figure{
     
   display: flex;
   justify-content: center;
         
 }
 
-.cancagenda-text h4{
-font-size: 16px;
+.calendar-text h4{
+font-size: 20px;
+font-weight: 700;
 text-align: center;
 color: #2a2a2a;;
 margin-bottom: 20px;
 }
 
-.cancagenda-btn{
+.calendar-btn{
   display: flex;
   flex-direction: column;
   align-items: center ;
 }
 
-.cancagenda-spa-home-right button:hover {
+.calendar-spa-home-right button:hover {
   background-color: #6063AC;
   color: #EFF2F5;
   cursor: pointer;
 }
 
+.solicita-calendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
 @media(max-width: 994px){
 
@@ -85,14 +93,15 @@ margin-bottom: 20px;
     font-family: 'Montserrat', 'calibri';
     font-size: 1px;
     font-weight: regular;
-    text-decoration: none;  
+    text-decoration: none;
+    background-color: #EFF2F5;  
   }
 
-  .cancagenda-spa-home{
+  .calendar-spa-home{
     display: none;
   }
 
-  .cancagenda-container {
+  .calendar-container {
     
     background:#FFF;
     height: 100vh;
@@ -100,17 +109,17 @@ margin-bottom: 20px;
     justify-content: center;
     
   }
-  
-  
-  .cancagenda-card{
+
+   
+  .calendar-card{
     
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
-    margin-top: 204.98px ;
+    margin-top: 116px ;
   }
   
-  .cancagenda-figure{
+  .calendar-figure{
     
     display: flex;
     justify-content: center;
@@ -118,14 +127,30 @@ margin-bottom: 20px;
         
   }
 
-.cancagenda-text{
+.calendar-text{
   margin-top: 30.02px;
   margin-bottom: 24px;
   max-width: 327px;
   max-height: 80px;
+  margin-left: 30px;
 }
-  
-.cancagenda-text h4{
+
+.calendar-text h4{
+text-align: left;
+}
+
+.solicita-calendar{
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.calendar-btn
+
+.calendar-text h4{
   font-size: 16px;
   text-align: center;
   color: #2a2a2a;;

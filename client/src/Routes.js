@@ -10,7 +10,8 @@ import ConfirmaAlt from "./Pages/ConfirmaAlt/ConfirmaAlt";
 import CancelaAgenda from "./Pages/CancelaAgenda/CancelaAgenda";
 import SelecionaUnidade from "./Pages/SelecionaUnidade/SelecionaUnidade";
 import Diretrizes from "./Pages/Diretrizes/Diretrizes";
-
+import NotFound from "./Pages/NotFound/NotFound";
+import SolicitacaoCalendario from "./Pages/SolicitacaoCalendario/SolicitacaoCalendario";
 
 // Ainda sem autenticação
 
@@ -18,6 +19,7 @@ const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
+               
                 <Route exact path="/" exact component={Home} />
                 <Route path="/login-adm" component={LoginAdm} />
                 <Route path="/login-colaborador" component={LoginColaborador} />
@@ -27,6 +29,8 @@ const Routes = () => {
                 <Route path="/cancela-agenda" component={CancelaAgenda} />
                 <Route path="/seleciona-unidade" component={SelecionaUnidade} />
                 <Route path="/diretrizes" component={Diretrizes} />
+                <Route path="/calendario" component={SolicitacaoCalendario} />
+                <Route component={NotFound} />
 
             </Switch>
         </BrowserRouter>

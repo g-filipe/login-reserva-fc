@@ -10,7 +10,7 @@ const ConfirmaAlt = () => {
 
 
 
-    <div className="App">
+    <div className="confalt-App">
 
       <div>
 
