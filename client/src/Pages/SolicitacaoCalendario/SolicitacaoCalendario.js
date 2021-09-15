@@ -10,7 +10,7 @@ const SolicitacaoCalendario = () => {
   return (
 
 
-    <div className="calendar-App">
+    <div className="App">
 
       <div>
 
@@ -20,38 +20,28 @@ const SolicitacaoCalendario = () => {
 
       {/* WEB */}
 
-      <div className="calendar-spa-home">
+      {/* <div className="calendar-spa-home"> */}
 
-        <div className="calendar-spa-home-logo">
+        {/* <div className="calendar-spa-home-logo">
           <img src={img} alt="Pessoas reunidas em ambiente de trabalho" />
-        </div>
-        <div className="calendar-spa-home-right">
+        </div> */}
+        {/* <div className="calendar-spa-home-right"> */}
 
-          <div className='calendar-text'>
+         {/* <div className='solicita-calendar'> */}
 
-            <h1> Selecione a data </h1>
+<div className = 'calendar-web'>
 
-          </div>
-
-          <div className='solicita-calendar'>
 
             <ReactCalendar />
 
+</div>
 
-          </div>
+          {/* </div> */}
 
-          <div className='calendar-btn'>
+          
 
-
-            <Button
-              buttonStyle='btn--vazado'
-              buttonSize='btn--m'
-            > Voltar </Button>
-
-          </div>
-
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
 
 
       {/* MOBILE */}
