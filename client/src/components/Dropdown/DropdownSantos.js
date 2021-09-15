@@ -14,7 +14,7 @@ export const DropdownSantos = ({selected2, setSelected2 }) => {
 
     return (
 
-        <div classname='box'>
+        <div className='box'>
 
 
             <div className="dropdown">

@@ -15,7 +15,7 @@ export const DropdownSP = ({selected, setSelected }) => {
 
     return (
 
-        <div classname='box'>
+        <div className='box'>
 
 
             <div className="dropdown">

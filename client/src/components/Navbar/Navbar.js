@@ -13,7 +13,7 @@ export const Navbar = () => {
         <nav className="NavbarItems">
 
             <div>
-                <img class="navbar-logo" src="https://blog.fcamara.com.br/wp-content/uploads/2019/10/Logotipo-FCamara.png" alt="Logo FCamara" />
+                <img className="navbar-logo" src="https://blog.fcamara.com.br/wp-content/uploads/2019/10/Logotipo-FCamara.png" alt="Logo FCamara" />
             </div>
 
            <ul onClick={() => setIsMobile(false)} className={isMobile ? 'nav-links-mobile' : 'nav-links'}>
