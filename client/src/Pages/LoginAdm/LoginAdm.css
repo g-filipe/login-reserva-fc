@@ -92,6 +92,10 @@ width: 400px;
    width: 320px;
 }
 
+.adm-options a{
+  color: #FE4400;
+}
+
 .adm-options label{
 margin-left: 8px;
 }
@@ -100,6 +104,10 @@ margin-left: 8px;
   display: flex;
    justify-content: center;
    margin-top: 20px;
+}
+
+.adm-options2 a{
+  color: #FE4400;
 }
 
 

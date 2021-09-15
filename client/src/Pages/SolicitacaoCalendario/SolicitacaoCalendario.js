@@ -6,6 +6,7 @@ import ReactCalendar from '../../components/Calendar/Calendar';
 
 const SolicitacaoCalendario = () => {
 
+
   return (
 
 
@@ -28,7 +29,7 @@ const SolicitacaoCalendario = () => {
 
           <div className='calendar-text'>
 
-            <h1> Selecione o escritório </h1>
+            <h1> Selecione a data </h1>
 
           </div>
 
@@ -36,14 +37,11 @@ const SolicitacaoCalendario = () => {
 
             <ReactCalendar />
 
+
           </div>
 
           <div className='calendar-btn'>
 
-
-            <Button
-              buttonSize='btn--m'
-            > Continuar </Button>
 
             <Button
               buttonStyle='btn--vazado'
@@ -64,36 +62,19 @@ const SolicitacaoCalendario = () => {
         <div className='calendar-card'>
 
 
-          <div className='calendar-text'>
-
-            <h4> Selecione a data:</h4>
-
-          </div>
-
           <div className='solicita-calendar'>
 
             <ReactCalendar />
 
           </div>
 
-          <div className='calendar-btn'>
-
-            <Button
-              buttonSize='btn--m'
-            > Continuar </Button>
-
-            <Button
-              buttonStyle='btn--vazado'
-              buttonSize='btn--m'
-            > Voltar </Button>
-
-          </div>
         </div>
 
       </div>
 
     </div>
   );
+
 }
 
 export default SolicitacaoCalendario;

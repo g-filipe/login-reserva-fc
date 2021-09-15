@@ -2,11 +2,12 @@ import './Diretrizes.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/home-intro-small.png'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { DropdownSP } from '../../components/Dropdown/DropdownSP.js';
 import { DropdownSantos } from '../../components/Dropdown/DropdownSantos.js';
 import { WarningModal } from '../../components/WarningModal/WarningModal';
 import { Link } from 'react-router-dom';
+import api from '../../services/api';
 
 const Diretrizes = () => {
 
@@ -14,9 +15,28 @@ const Diretrizes = () => {
   const [selected2, setSelected2] = useState("");
 
   const TotalSP = Math.round(selected * 240 / 100);
+  const TotalSantos = Math.round(selected2 * 100 / 100);
 
   const [openWarningModal, setOpenWarningModal] = useState(false);
 
+   //Aqui cria estados para que eu possa pegar os dados da api e colocar neles
+
+   const [capacidade, setCapacidade] = useState([]);
+   const [vagas, setVagas] = useState(0);
+ 
+   //Aqui pega os dados do escritório de SP, mas ainda não sei como enviar os dados que precisamos do front para cá,
+   // por enquanto eu coloquei o id_escritorio manualmente
+
+   useEffect(() => {
+    let escritorio = "1";
+    api.get(`/lotacao/${escritorio}`).then((data) => {
+      setCapacidade(data.data["capacidade"]);
+      setVagas(data.data["vagas"])
+    });
+    //eslint-disable-next-line
+  }, []);
+  console.log(capacidade + " " + vagas);
+  
   return (
 
     <div className="App">

@@ -6,10 +6,12 @@ const STYLES =[
   "btn--solido",
   "btn--vazado",
   "btn--icon",
-  "btn--select"
+  "btn--select",
+  "btn--agenda"
 ];
 
 const SIZES =[
+  "btn--xg",
   "btn--gg",
   "btn--g",
   "btn--m",
@@ -24,7 +26,7 @@ export const Button = ({
     buttonSize}) => {
 
       const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-      const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
+      const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[2];
 
         return(
 

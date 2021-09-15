@@ -1,12 +1,16 @@
 
+*{
+  margin: 0 auto;
+}
+
 .App{
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', 'calibri';
-  font-size: 1px;
+  font-size: 16px;
   font-weight: regular;
-  text-decoration: none;  
+  text-decoration: none; 
 }
 
 /* .container{
@@ -24,8 +28,8 @@
 
 .spa-home-logo img{
 width: 800px;
-/* border-radius: 25px;
-border-bottom: 300px; */
+ border-radius: 50%;
+/*border-bottom: 300px; */
 /* margin-left: 80px; */
 }
 
@@ -98,7 +102,7 @@ button::before {
     font-family: 'Montserrat', 'calibri';
     font-size: 1px;
     font-weight: regular;
-    text-decoration: none;  
+    text-decoration: none;
   }
 
   .spa-home{
@@ -118,6 +122,8 @@ button::before {
   
   .card{
     
+    height: 100vh;
+    /* width: 100vw; */
     flex-direction: column;
     display: flex;
     justify-content: center;

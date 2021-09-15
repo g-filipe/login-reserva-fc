@@ -12,6 +12,7 @@ import SelecionaUnidade from "./Pages/SelecionaUnidade/SelecionaUnidade";
 import Diretrizes from "./Pages/Diretrizes/Diretrizes";
 import NotFound from "./Pages/NotFound/NotFound";
 import SolicitacaoCalendario from "./Pages/SolicitacaoCalendario/SolicitacaoCalendario";
+import SeusAgendamentos from "./Pages/SeusAgendamentos/SeusAgendamentos";
 
 // Ainda sem autenticação
 
@@ -30,6 +31,7 @@ const Routes = () => {
                 <Route path="/seleciona-unidade" component={SelecionaUnidade} />
                 <Route path="/diretrizes" component={Diretrizes} />
                 <Route path="/calendario" component={SolicitacaoCalendario} />
+                <Route path="/seus-agendamentos" component={SeusAgendamentos} />
                 <Route component={NotFound} />
 
             </Switch>

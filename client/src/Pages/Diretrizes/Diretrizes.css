@@ -6,7 +6,9 @@
   font-family: 'Montserrat', 'calibri';
   font-size: 1px;
   font-weight: regular;
-  text-decoration: none;  
+  text-decoration: none; 
+  width: 100vw;
+  height: 100vh; 
 }
 
 .dir-container{

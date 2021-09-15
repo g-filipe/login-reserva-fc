@@ -52,11 +52,24 @@ margin-bottom: 16px;
     box-shadow: 0px 2px 8px rgba(74, 74, 74, 0.08);
 }
 
+.btn--agenda{
+    background-color: var(--vazado);    
+    color: #000000;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(74, 74, 74, 0.08);
+    border-radius: 16px;
+}
+
 .btn--select:focus{
  border: 1px solid #36357E;
 }
 
 /*Tamanhos*/
+
+.btn--xg{
+    width: 327px;
+    height: 130px;  
+}
 
 .btn--gg{
     width: 375px;

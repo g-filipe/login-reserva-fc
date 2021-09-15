@@ -25,7 +25,7 @@
 
 
 .calendar-spa-home-logo img{
-max-width: 800px;
+max-width: 400px;
 
 }
 
@@ -34,7 +34,7 @@ max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   margin-left: 30px;
   padding: 20px;
   width: 40%;
@@ -80,7 +80,6 @@ margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   border-radius: 10px;
 }
 
@@ -91,10 +90,11 @@ margin-bottom: 20px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', 'calibri';
-    font-size: 1px;
+    font-size: 16px;
     font-weight: regular;
     text-decoration: none;
-    background-color: #EFF2F5;  
+    background-color: #EFF2F5; 
+     
   }
 
   .calendar-spa-home{
@@ -116,7 +116,7 @@ margin-bottom: 20px;
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
-    margin-top: 116px ;
+    /* margin-top: 116px ; */
   }
   
   .calendar-figure{
@@ -128,7 +128,7 @@ margin-bottom: 20px;
   }
 
 .calendar-text{
-  margin-top: 30.02px;
+  margin-top: 116px ;
   margin-bottom: 24px;
   max-width: 327px;
   max-height: 80px;
@@ -141,20 +141,14 @@ text-align: left;
 
 .solicita-calendar{
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
+  /* height: 100vh; */
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 auto;
   border-radius: 10px;
 }
 
-.calendar-btn
-
-.calendar-text h4{
-  font-size: 16px;
-  text-align: center;
-  color: #2a2a2a;;
-}
   
 }
   
