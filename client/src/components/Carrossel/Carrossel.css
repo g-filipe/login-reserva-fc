@@ -1,0 +1,45 @@
+.agnd-text h4{
+  font-size: 16px;
+  text-align: center;
+  color: #2a2a2a;;
+}
+  
+
+.agenda{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.agenda Button{
+  text-align: left;
+ 
+   
+}
+.agenda Button h2, h3{
+  text-align: left; 
+  margin-left: 17px;
+}
+
+.agenda Button h2{
+font-size: 18px;
+font-weight: 600;
+
+}
+.agenda Button h3{
+font-size: 14px;
+font-weight: 500;
+
+}
+
+.Carrossel{
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth ;
+}
+
+.carrossel-container{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}

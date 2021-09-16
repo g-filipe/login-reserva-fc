@@ -4,29 +4,29 @@ import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/newsletter-effects.png'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { YearView } from 'react-calendar';
+import { Carrossel } from '../../components/Carrossel/Carrossel';
 
 const SeusAgendamentos = () => {
   
   
   // pegar dados
   
-  const[dados, setDados] = useState([]) 
+  // const[dados, setDados] = useState([]) 
 
-  useEffect(() =>{
+  // useEffect(() =>{
 
-       axios.get('http://localhost:3000/api/agendamentos/2')
-       .then(res =>{
-         console.log(res)
-         setDados(res.data)
-       })
-       .catch(err => {
-         console.log(err)
-       })
+  //      axios.get('http://localhost:3000/api/agendamentos/2')
+  //      .then(res =>{
+  //        console.log(res)
+  //        setDados(res.data)
+  //      })
+  //      .catch(err => {
+  //        console.log(err)
+  //      })
     
-  }, [])
+  // }, [])
 
-  const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+  // const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
   
     
  return (
@@ -48,77 +48,50 @@ const SeusAgendamentos = () => {
           <img src={img} alt="Pessoas reunidas em ambiente de trabalho" />
         </div>
         <div className="agnd-spa-home-right">
-          
-          <div className='agnd-text'>
-
-            <h1> Selecione o escritório </h1>
-
-          </div>
-
-          <div className='agnd-btn'>
-
-            <Button
-              buttonStyle='btn--select'
-              buttonSize='btn--m'
-            > São Paulo </Button>
-
-            <Button
-              buttonStyle='btn--select'
-              buttonSize='btn--m'
-            > Santos </Button>
-
-            <Button
-              buttonSize='btn--m'
-            > Continuar </Button>
-
-            <Button
-              buttonStyle='btn--vazado'
-              buttonSize='btn--m'
-            > Voltar </Button>
-
-          </div>
-
-        </div>
-      </div>
+       
+        <div className='agnd-container'>
 
 
-      {/* MOBILE */}
+  <div className='agnd-text'>
 
-      <div className='agnd-container'>
+    <h4> Seus Agendamentos</h4>
 
+  </div>
 
-        <div className='agnd-card'>
+<div className='agnd-card'>
 
+<Carrossel />
 
-          <div className='agnd-text'>
-
-            <h4> Seus Agendamentos</h4>
-
-          </div>
-
-
-  {dados.map((dados) =>{
-    return ( 
+{/* {dados.map((dados) =>{
+return ( 
 
 <div className='agenda'>
-  
-      <Button
-    buttonStyle = 'btn--agenda'
-    buttonSize = 'btn--xg'
-    key={dados.id_agendamento}>
-      <h2>{dados.data[8]}{dados.data[9]} de {meses[dados.data[5,6]-1]}</h2>
-      <h3>Unidade: {dados.id_escritorio = 1? 'São Paulo' : 'Santos'} </h3>
-      </Button>
 
-      </div>
+<ul>
 
-  )})}
-  
 
+<li key={dados.id_agendamento}><Button
+buttonStyle = 'btn--agenda'
+buttonSize = 'btn--xg'
+>
+<h2>{dados.data[8]}{dados.data[9]} de {meses[dados.data[5,6]-1]}</h2>
+<h3>Unidade: {dados.id_escritorio = 1? 'São Paulo' : 'Santos'} </h3>
+</Button></li>
+
+  </ul>
+
+</div>
+
+)})} */}
+
+
+</div>
+</div>           
         </div>
       </div>
 
-    </div>
+
+       </div>
   );
 }
 
