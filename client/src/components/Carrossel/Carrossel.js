@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './Carrossel.css'
 import { Janeiro } from "../Meses/1Janeiro";
 import { Fevereiro } from "../Meses/2Fevereiro";
@@ -14,199 +14,569 @@ import { Novembro } from "../Meses/11Novembro"
 import { Dezembro } from "../Meses/12Dezembro";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
+import { SetaDireita } from "../../assets/Icons/Setadireita/SetaDireita";
 
 
 export const Carrossel = () => {
 
+    const d = new Date();
+    const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    const [active, setActive] = useState(meses[d.getMonth()]);
 
     return (
 
-        <div className='carrossel-container'>
 
 
-            <div className='car-card'>
+        <div className='carrossel-container' >
 
+            {active === "Janeiro" &&
 
-                <h1>Janeiro</h1>
+                <div className='car-card'>
 
-                <Janeiro />
+                    <div className='mes'>
 
-                <Link to='/calendario'>
+                        <h1>Janeiro</h1>
 
-                    <Button buttonSize='btn--m'
-                        buttonStyle='btn--solido'>
+                        <div className='rolar-direita'>
 
-                        <h5>Criar novo agendamento</h5>
+                            <button onClick={() =>
+                                setActive("Fevereiro")
+                            }
 
-                    </Button>
+                            ><SetaDireita /></button>
 
-                </Link>
+                        </div>
 
-            </div>
-
-            <div className='car-card'>
-
-                <h1>Fevereiro</h1>
-                <Fevereiro />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
-            </div>
-
-
-            <div className='car-card'>
-
-                <h1>Março</h1>
-                < Marco />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
-
-            </div>
-
-
-            <div className='car-card'>
-
-                <h1>Abril</h1>
-                <Abril />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
-
-            </div>
-
-
-            <div className='car-card'>
-                <h1>Maio</h1>
-                <Maio />
-
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
-            </div>
-
-
-            <div className='car-card'>
-
-
-                <h1>Junho</h1>
-                <Junho />
-
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
-            </div>
-
-
-            <div className='car-card'>
-
-                <h1>Julho</h1>
-                <Julho />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
-
-            </div>
-
-            <div className='car-card'>
-
-                <h1>Agosto</h1>
-                <Agosto />
-                
-                <div className='btn-agnd'>
-
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
-
-                    <h5>Criar novo agendamento</h5>
-
-                </Button>
                     </div>
-            </div>
 
-            <div className='car-card'>
+                    <Janeiro />
 
+                    <Link to='/seleciona-unidade'>
 
-                <h1>Setembro</h1>
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
 
-                <Setembro />
-                <div className='btn-agnd'>
+                            <h5>Criar novo agendamento</h5>
 
+                        </Button>
 
-                    <Button buttonSize='btn--m'
-                        buttonStyle='btn--solido'
-                    >
-                        <h5>Criar novo agendamento</h5>
-
-                    </Button>
+                    </Link>
 
                 </div>
-            </div>
+
+            }
+
+            {active === "Fevereiro" &&
 
 
-            <div className='car-card'>
+                <div className='car-card'>
 
-                <h1>Outubro</h1>
-                <Outubro />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
+                    <div className='mes'>
 
-                    <h5>Criar novo agendamento</h5>
+                        <div className='rolar-esquerda'>
 
-                </Button>
+                            <button onClick={() =>
+                                setActive("Janeiro")
+                            }
 
-            </div>
+                            ><SetaDireita /></button>
 
-            <div className='car-card'>
+                        </div>
+
+                        <h1>Fevereiro</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Março")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Fevereiro />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+                </div>
+
+            }
+
+            {active === "Março" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Fevereiro")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Março</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Abril")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    < Marco />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+            }
 
 
-                <h1>Novembro</h1>
-                <Novembro />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
+            {active === "Abril" &&
 
-                    <h5>Criar novo agendamento</h5>
+                <div className='car-card'>
 
-                </Button>
-            </div>
+                    <div className='mes'>
 
-            <div className='car-card'>
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Março")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Abril</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Maio")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Abril />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+
+            }
 
 
-                <h1>Dezembro</h1>
+            {active === "Maio" &&
 
-                <Dezembro />
-                <Button buttonSize='btn--m'
-                    buttonStyle='btn--solido'>
+                <div className='car-card'>
 
-                    <h5>Criar novo agendamento</h5>
+                    <div className='mes'>
 
-                </Button>
-            </div>
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Abril")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Maio</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Junho")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <Maio />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+            }
+
+
+            {active === "Junho" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Maio")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Junho</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Julho")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Junho />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+            }
+
+
+            {active === "Julho" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Junho")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Julho</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Agosto")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Julho />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+            }
+
+            {active === "Agosto" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Julho")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Agosto</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Setembro")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Agosto />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+
+            }
+
+            {active === "Setembro" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Agosto")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <div className='nome-mes'>
+
+                            <h1>Setembro</h1>
+
+
+                        </div>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Outubro")
+                            }
+                            ><SetaDireita />
+                            </button>
+
+                        </div>
+                    </div>
+                    <Setembro />
+
+                    <div>
+
+                        <Link to='/seleciona-unidade'>
+
+                            <Button buttonSize='btn--m'
+                                buttonStyle='btn--solido'>
+
+                                <h5>Criar novo agendamento</h5>
+
+                            </Button>
+
+                        </Link>
+
+                    </div>
+                </div>
+            }
+
+            {active === "Outubro" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Setembro")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Outubro</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Novembro")
+                            }
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Outubro />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+
+                </div>
+
+            }
+
+            {active === "Novembro" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Outubro")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Novembro</h1>
+
+                        <div className='rolar-direita'>
+
+                            <button onClick={() =>
+                                setActive("Dezembro")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                    </div>
+
+                    <Novembro />
+                    
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+                </div>
+            }
+
+
+            {active === "Dezembro" &&
+
+                <div className='car-card'>
+
+                    <div className='mes'>
+
+                        <div className='rolar-esquerda'>
+
+                            <button onClick={() =>
+                                setActive("Novembro")
+                            }
+
+                            ><SetaDireita /></button>
+
+                        </div>
+
+                        <h1>Dezembro</h1>
+
+                    </div>
+
+                    <Dezembro />
+
+                    <Link to='/seleciona-unidade'>
+
+                        <Button buttonSize='btn--m'
+                            buttonStyle='btn--solido'>
+
+                            <h5>Criar novo agendamento</h5>
+
+                        </Button>
+
+                    </Link>
+                </div>
+            }
 
         </div>
-
-
-
-
 
 
 

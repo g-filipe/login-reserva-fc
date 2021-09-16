@@ -1,17 +1,16 @@
 import './Agendamentos.css';
 import { Button } from '../../components/Button/Button';
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Navbar2 } from '../../components/Navbar2/Navbar2';
 import img from '../../assets/home-intro-small.png'
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Modal } from '../../components/Modal/Modal';
 import { Link } from 'react-router-dom';
 import { Carrossel } from '../../components/Carrossel/Carrossel';
 
-
-
 const Agendamentos = () => {
-  
-  const [openModal, setOpenModal] = useState(false);
+
+
+    const [openModal, setOpenModal] = useState(false);
    
   return (
 
@@ -19,7 +18,7 @@ const Agendamentos = () => {
 
       <div>
 
-        <Navbar />
+        <Navbar2 />
 
       </div>
 
@@ -92,7 +91,7 @@ const Agendamentos = () => {
 
       {/* MOBILE */}
 
-      <div className='seusagnd-container'>
+      <div className='seusagnd-container' >
 
         {/* Modal */}
 
@@ -134,8 +133,7 @@ const Agendamentos = () => {
 
         <div className='seusagnd-card'>
 
-
-         <Carrossel/>
+         <Carrossel />
 
         </div>
       </div>

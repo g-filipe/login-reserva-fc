@@ -1,6 +1,6 @@
 import './ConfirmaAgenda.css';
 import { Button } from '../../components/Button/Button';
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Navbar2 } from '../../components/Navbar2/Navbar2';
 import img from '../../assets/blog_programador4.png'
 import { Check } from '../../assets/Icons/Check/Check';
 import { Link } from 'react-router-dom';
@@ -13,7 +13,7 @@ const ConfirmaAgenda = () => {
 
       <div>
 
-        <Navbar />
+        <Navbar2 />
 
       </div>
 

@@ -1,6 +1,6 @@
 import './Diretrizes.css';
 import { Button } from '../../components/Button/Button';
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Navbar2 } from '../../components/Navbar2/Navbar2';
 import img from '../../assets/home-intro-small.png'
 import { useState, useEffect } from 'react';
 import { DropdownSP } from '../../components/Dropdown/DropdownSP.js';
@@ -14,7 +14,7 @@ const Diretrizes = () => {
   const [selected, setSelected] = useState("");
   const [selected2, setSelected2] = useState("");
 
-  const TotalSP = Math.round(selected * 240 / 100);
+  const TotalSP = Math.round(selected * 600 / 100);
   const TotalSantos = Math.round(selected2 * 100 / 100);
 
   const [openWarningModal, setOpenWarningModal] = useState(false);
@@ -43,7 +43,7 @@ const Diretrizes = () => {
 
       <div>
 
-        <Navbar />
+        <Navbar2 />
 
       </div>
 

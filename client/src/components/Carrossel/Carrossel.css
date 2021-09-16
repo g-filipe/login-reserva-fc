@@ -7,8 +7,8 @@
 .agenda{
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
 }
+
 
 .agenda Button{
   text-align: left;
@@ -30,11 +30,48 @@ font-weight: 500;
 
 }
 
+.mes{
+    display: flex;
+    align-items: center;
+}
+
+.rolar-esquerda{
+    margin-bottom: 40px;
+    background-color: transparent;
+    border:none;
+}
+.rolar-direita{
+    margin-bottom: 40px;
+    background-color: transparent;
+    border:none;
+}
+
+.rolar-esquerda button{
+    background-color: transparent;
+    border:none;
+    transform: rotate(180deg);    
+}
+
+.rolar-esquerda button:hover{
+   cursor: pointer;   
+}
+
+.rolar-direita button{
+    background-color: transparent;
+    border:none;
+}
+
+.rolar-direita button:hover{
+   cursor: pointer;   
+}
+
 .Carrossel{
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth ;
+    justify-content: center;
 }
+
 .Carrossel h1{
     display: none ;
 }
@@ -93,6 +130,26 @@ color: #2a2a2a;
         /* width: 100vw; */
     }
 
+    ul{
+        margin: o auto;
+        padding: 0
+    }
+
+
+    @media(max-width:940px) {
+        
+        .rolar-esquerda{
+            margin-bottom: 25px;
+            background-color: transparent;
+            border:none;
+        }
+        .rolar-direita{
+            margin-bottom: 25px;
+            background-color: transparent;
+            border:none;
+        }
+
+    }
 
 
 

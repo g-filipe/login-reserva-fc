@@ -12,7 +12,7 @@ import SelecionaUnidade from "./Pages/SelecionaUnidade/SelecionaUnidade";
 import Diretrizes from "./Pages/Diretrizes/Diretrizes";
 import NotFound from "./Pages/NotFound/NotFound";
 import Agendamentos from "./Pages/Agendamentos/Agendamentos";
-import SolicitacaoCalendarioSP from "./Pages/SolicitacaoCalendario/SolicitacaoCalendarioSP";
+import SolicitacaoCalendarioSP from "./Pages/SolicitacaoCalendario/SolicitacaoCalendarioSP.js";
 import SolicitacaoCalendarioSantos from "./Pages/SolicitacaoCalendario/SolicitacaoCalendarioSantos";
 
 // Ainda sem autenticação

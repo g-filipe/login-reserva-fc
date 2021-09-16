@@ -37,7 +37,7 @@ export const Setembro = (label) => {
 
 
 {dados.map((dados) =>{
-    console.log(dados.data[5,6])
+    // console.log(dados.data[5,6])
     return ( 
         
         
@@ -60,7 +60,6 @@ buttonSize = 'btn--xg'
 <h2>{dados.data[8]}{dados.data[9]} de {meses[mes]}</h2>
 <h3>Unidade: {dados.id_escritorio === 1? 'São Paulo' : 'Santos'} </h3>
 </Button></div>
-
 
 </div>
 :null}

@@ -6,7 +6,7 @@ export const MenuItems = [
     },
     {
         title: "nossa atuação",
-        url: '#',
+        url: 'https://www.fcamara.com.br/marcas-mercados',
         cName: 'nav-link-item'
     },
     {

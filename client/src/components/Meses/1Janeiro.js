@@ -46,9 +46,13 @@ export const Janeiro = () => {
                     <div className='agenda'>
 
                         <ul>
-<h1>sad</h1>
                             {dados.data[5] === '0' && dados.data[6] === '2' ?
 
+                                
+                                
+                                
+                                
+                                
                                 <li key={dados.id_agendamento}><Button
                                     buttonStyle='btn--agenda'
                                     buttonSize='btn--xg'

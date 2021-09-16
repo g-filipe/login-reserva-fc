@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SelecionaUnidade.css';
 import { Button } from '../../components/Button/Button';
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Navbar2 } from '../../components/Navbar2/Navbar2';
 import img from '../../assets/newsletter-effects.png'
 import { MapPin } from '../../assets/Icons/MapPin/MapPin';
 import { Link } from 'react-router-dom';
@@ -21,7 +21,7 @@ const SelecionaUnidade = () => {
 
       <div>
 
-        <Navbar />
+        <Navbar2 />
 
       </div>
 
