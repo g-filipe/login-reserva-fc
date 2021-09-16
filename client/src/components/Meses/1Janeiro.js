@@ -46,7 +46,7 @@ export const Janeiro = () => {
                     <div className='agenda'>
 
                         <ul>
-
+<h1>sad</h1>
                             {dados.data[5] === '0' && dados.data[6] === '2' ?
 
                                 <li key={dados.id_agendamento}><Button
@@ -54,7 +54,7 @@ export const Janeiro = () => {
                                     buttonSize='btn--xg'
                                 >
                                     <h2>{dados.data[8]}{dados.data[9]} de {meses[mes]}</h2>
-                                    <h3>Unidade: {dados.id_escritorio = 1 ? 'São Paulo' : 'Santos'} </h3>
+                                    <h3>Unidade: {dados.id_escritorio === 1 ? 'São Paulo' : 'Santos'} </h3>
                                 </Button></li>
 
                                 : null}

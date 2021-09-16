@@ -1,12 +1,20 @@
+import React, { useState } from 'react';
 import './SelecionaUnidade.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/newsletter-effects.png'
 import { MapPin } from '../../assets/Icons/MapPin/MapPin';
+import { Link } from 'react-router-dom';
+
 
 const SelecionaUnidade = () => {
-  
-    return (
+
+
+  const [unidade, setUnidade] = useState()
+  const SP = "/calendario-sp"
+  const Santos = "/calendario-santos"
+
+  return (
 
 
     <div className="App">
@@ -42,16 +50,27 @@ const SelecionaUnidade = () => {
             <Button
               buttonStyle='btn--select'
               buttonSize='btn--m'
+              onClick={() => {
+                setUnidade(SP);
+              }}
             > São Paulo </Button>
 
             <Button
               buttonStyle='btn--select'
               buttonSize='btn--m'
+              onClick={() => {
+                setUnidade(Santos);
+              }}
             > Santos </Button>
 
-            <Button
-              buttonSize='btn--m'
-            > Continuar </Button>
+
+            <Link to={unidade}>
+
+              <Button
+                buttonSize='btn--m'
+              > Continuar </Button>
+
+            </Link>
 
             <Button
               buttonStyle='btn--vazado'
@@ -87,16 +106,26 @@ const SelecionaUnidade = () => {
           <Button
             buttonStyle='btn--select'
             buttonSize='btn--m'
+            onClick={() => {
+              setUnidade(SP);
+            }}
           > São Paulo </Button>
 
           <Button
             buttonStyle='btn--select'
             buttonSize='btn--m'
+            onClick={() => {
+              setUnidade(Santos);
+            }}
           > Santos </Button>
 
-          <Button
-            buttonSize='btn--m'
-          > Continuar </Button>
+          <Link to={unidade}>
+
+            <Button
+              buttonSize='btn--m'
+            > Continuar </Button>
+
+          </Link>
 
           <Button
             buttonStyle='btn--vazado'

@@ -24,7 +24,7 @@ export const Carrossel = () => {
         <div className='carrossel-container'>
 
 
-            <div className='card'>
+            <div className='car-card'>
 
 
                 <h1>Janeiro</h1>
@@ -33,10 +33,10 @@ export const Carrossel = () => {
 
                 <Link to='/calendario'>
 
-                    <Button buttonSize='btn--xg'
-                        buttonStyle='btn--vazado'>
+                    <Button buttonSize='btn--m'
+                        buttonStyle='btn--solido'>
 
-                        <h2>Criar novo agendamento</h2>
+                        <h5>Criar novo agendamento</h5>
 
                     </Button>
 
@@ -44,101 +44,105 @@ export const Carrossel = () => {
 
             </div>
 
-            <div className='card'>
+            <div className='car-card'>
 
                 <h1>Fevereiro</h1>
                 <Fevereiro />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
             </div>
 
 
-            <div className='card'>
+            <div className='car-card'>
 
                 <h1>Março</h1>
                 < Marco />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
 
             </div>
 
 
-            <div className='card'>
+            <div className='car-card'>
 
                 <h1>Abril</h1>
                 <Abril />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
 
             </div>
 
 
-            <div className='card'>
+            <div className='car-card'>
                 <h1>Maio</h1>
                 <Maio />
 
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
             </div>
 
 
-            <div className='card'>
+            <div className='car-card'>
 
 
                 <h1>Junho</h1>
                 <Junho />
 
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
             </div>
 
 
-            <div className='card'>
+            <div className='car-card'>
 
                 <h1>Julho</h1>
                 <Julho />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
 
             </div>
 
-            <div className='card'>
+            <div className='car-card'>
 
                 <h1>Agosto</h1>
                 <Agosto />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                
+                <div className='btn-agnd'>
 
-                    <h2>Criar novo agendamento</h2>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
+
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
+                    </div>
             </div>
 
-            <div className='card'>
+            <div className='car-card'>
 
 
                 <h1>Setembro</h1>
@@ -147,10 +151,10 @@ export const Carrossel = () => {
                 <div className='btn-agnd'>
 
 
-                    <Button buttonSize='btn--xg'
-                        buttonStyle='btn--vazado'
+                    <Button buttonSize='btn--m'
+                        buttonStyle='btn--solido'
                     >
-                        <h2>Criar novo agendamento</h2>
+                        <h5>Criar novo agendamento</h5>
 
                     </Button>
 
@@ -158,42 +162,42 @@ export const Carrossel = () => {
             </div>
 
 
-            <div className='card'>
+            <div className='car-card'>
 
                 <h1>Outubro</h1>
                 <Outubro />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
 
             </div>
 
-            <div className='card'>
+            <div className='car-card'>
 
 
                 <h1>Novembro</h1>
                 <Novembro />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
             </div>
 
-            <div className='card'>
+            <div className='car-card'>
 
 
                 <h1>Dezembro</h1>
 
                 <Dezembro />
-                <Button buttonSize='btn--xg'
-                    buttonStyle='btn--vazado'>
+                <Button buttonSize='btn--m'
+                    buttonStyle='btn--solido'>
 
-                    <h2>Criar novo agendamento</h2>
+                    <h5>Criar novo agendamento</h5>
 
                 </Button>
             </div>

@@ -8,7 +8,7 @@ import { Modal } from "../Modal/Modal";
 import { Link } from "react-router-dom";
 
 
-export const ReactCalendar = () => {
+export const ReactCalendarSP = () => {
 
 
     // Conexão com db
@@ -17,9 +17,9 @@ export const ReactCalendar = () => {
     const criarAgendamento = async (agendamento) => {
         const Created = await axios.post('http://localhost:3000/api/agendamentos', agendar);
         if (Created.status === 201) {
-            alert('Created');
+            console.log('Ceated');
         } else
-            alert('Bad Request');
+            console.log('Bad Request');
     };
 
     // Pegando a data
@@ -57,7 +57,7 @@ export const ReactCalendar = () => {
 
                 <div className='modal-text'>
 
-                    <h1>Deseja confirmar reserva para dia 20 de Setembro, Segunda-feira Unidade: São Paulo?  </h1>
+                    <h1>Deseja confirmar reserva?  </h1>
 
                 </div>
 
@@ -128,4 +128,4 @@ export const ReactCalendar = () => {
     );
 }
 
-export default ReactCalendar
+export default ReactCalendarSP;

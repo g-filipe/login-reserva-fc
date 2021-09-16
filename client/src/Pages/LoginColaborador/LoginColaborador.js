@@ -4,6 +4,7 @@ import { Input } from '../../components/Input/Input';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import calendario from '../../assets/calendario.png'
+import { Link } from 'react-router-dom';
 
 const LoginColaborador = () => {
   return (
@@ -81,9 +82,9 @@ const LoginColaborador = () => {
 
       {/* MOBILE */}
 
-      <div className='container'>
+      <div className='logcol-container'>
 
-        <div className='card'>
+        <div className='logcol-card'>
 
           <div className='figure'>
 
@@ -113,7 +114,10 @@ const LoginColaborador = () => {
 
           <div className="button">
 
+         
+           
             <Button> Entrar </Button>
+
 
           </div>
 

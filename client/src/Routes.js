@@ -11,8 +11,9 @@ import CancelaAgenda from "./Pages/CancelaAgenda/CancelaAgenda";
 import SelecionaUnidade from "./Pages/SelecionaUnidade/SelecionaUnidade";
 import Diretrizes from "./Pages/Diretrizes/Diretrizes";
 import NotFound from "./Pages/NotFound/NotFound";
-import SolicitacaoCalendario from "./Pages/SolicitacaoCalendario/SolicitacaoCalendario";
 import Agendamentos from "./Pages/Agendamentos/Agendamentos";
+import SolicitacaoCalendarioSP from "./Pages/SolicitacaoCalendario/SolicitacaoCalendarioSP";
+import SolicitacaoCalendarioSantos from "./Pages/SolicitacaoCalendario/SolicitacaoCalendarioSantos";
 
 // Ainda sem autenticação
 
@@ -30,7 +31,8 @@ const Routes = () => {
                 <Route path="/cancela-agenda" component={CancelaAgenda} />
                 <Route path="/seleciona-unidade" component={SelecionaUnidade} />
                 <Route path="/diretrizes" component={Diretrizes} />
-                <Route path="/calendario" component={SolicitacaoCalendario} />
+                <Route path="/calendario-sp" component={SolicitacaoCalendarioSP} />
+                <Route path="/calendario-santos" component={SolicitacaoCalendarioSantos} />
                 <Route path="/agendamentos" component={Agendamentos} />
                 <Route component={NotFound} />
 

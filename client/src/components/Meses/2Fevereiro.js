@@ -51,7 +51,7 @@ export const Fevereiro = () => {
                                     buttonSize='btn--xg'
                                 >
                                     <h2>{dados.data[8]}{dados.data[9]} de {meses[mes]}</h2>
-                                    <h3>Unidade: {dados.id_escritorio = 1 ? 'São Paulo' : 'Santos'} </h3>
+                                    <h3>Unidade: {dados.id_escritorio === 1 ? 'São Paulo' : 'Santos'} </h3>
                                 </Button></li>
 
                                 : null}

@@ -2,12 +2,9 @@ import './Agendamentos.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/home-intro-small.png'
-import { useState, useEffect } from 'react';
-import { DropdownSP } from '../../components/Dropdown/DropdownSP.js';
-import { DropdownSantos } from '../../components/Dropdown/DropdownSantos.js';
+import { useState } from 'react';
 import { Modal } from '../../components/Modal/Modal';
 import { Link } from 'react-router-dom';
-import api from '../../services/api';
 import { Carrossel } from '../../components/Carrossel/Carrossel';
 
 
@@ -18,7 +15,7 @@ const Agendamentos = () => {
    
   return (
 
-    <div className="App">
+    <div className="seusagnd-App">
 
       <div>
 

@@ -3,11 +3,10 @@ import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/blog_programador4.png'
 import { Check } from '../../assets/Icons/Check/Check';
+import { Link } from 'react-router-dom';
 
 const ConfirmaAgenda = () => {
   return (
-
-
 
 
     <div className="App">
@@ -43,14 +42,21 @@ const ConfirmaAgenda = () => {
           <div className='confagenda-btn'>
 
 
-            <Button
-              buttonSize='btn--m'
-            > Ver meus agendamentos </Button>
+          <Link to="/agendamentos">
+              <Button
+                buttonSize='btn--m'
+              > Ver meus agendamentos </Button>
 
-            <Button
-              buttonStyle='btn--vazado'
-              buttonSize='btn--m'
-            > Voltar à página inicial </Button>
+            </Link>
+
+            <Link To="/principal-adm">
+
+              <Button
+                buttonStyle='btn--vazado'
+                buttonSize='btn--m'
+              > Voltar à página inicial </Button>
+
+            </Link>
 
           </div>
 
@@ -79,14 +85,24 @@ const ConfirmaAgenda = () => {
 
           </div>
 
+          <Link to="/agendamentos">
+         
           <Button
             buttonSize='btn--m'
           > Ver meus agendamentos </Button>
 
+          </Link>
+
+          
+          <Link to="/principal-adm">
+          
           <Button
             buttonStyle='btn--vazado'
             buttonSize='btn--m'
           > Voltar à página inicial </Button>
+
+
+          </Link>
 
         </div>
       </div>

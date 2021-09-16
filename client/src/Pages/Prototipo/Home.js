@@ -48,11 +48,11 @@ const Home = () => {
 
       {/* MOBILE */}
 
-      <div className='container'>
+      <div className='home-container'>
 
 
 
-        <div className='card'>
+        <div className='home-card'>
 
 
           <div className='figure'>

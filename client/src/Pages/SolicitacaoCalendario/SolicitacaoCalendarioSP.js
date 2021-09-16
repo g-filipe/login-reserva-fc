@@ -2,9 +2,9 @@ import './SolicitacaoCalendario.css';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import img from '../../assets/home-intro.png'
-import ReactCalendar from '../../components/Calendar/Calendar';
+import ReactCalendarSP from '../../components/Calendar/CalendarSP';
 
-const SolicitacaoCalendario = () => {
+const SolicitacaoCalendarioSP = () => {
 
 
   return (
@@ -22,7 +22,7 @@ const SolicitacaoCalendario = () => {
 <div className = 'calendar-web'>
 
 
-            <ReactCalendar />
+            <ReactCalendarSP />
 
 </div>
 
@@ -36,7 +36,7 @@ const SolicitacaoCalendario = () => {
 
           <div className='solicita-calendar'>
 
-            <ReactCalendar />
+            <ReactCalendarSP />
 
           </div>
 
@@ -49,4 +49,4 @@ const SolicitacaoCalendario = () => {
 
 }
 
-export default SolicitacaoCalendario;
+export default SolicitacaoCalendarioSP;

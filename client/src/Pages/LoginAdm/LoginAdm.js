@@ -4,14 +4,14 @@ import { Input } from '../../components/Input/Input';
 import { Button } from '../../components/Button/Button';
 import { Navbar } from '../../components/Navbar/Navbar';
 import calendario from '../../assets/calendario.png'
-
+import { Link } from 'react-router-dom';
 
 
 
 const LoginAdm = () => {
-  
-  
-  
+
+
+
   return (
 
     <div className="App">
@@ -32,7 +32,7 @@ const LoginAdm = () => {
         </div>
         <div className="adm-spa-home-right-c">
 
-        <h1>Área do Administrador</h1>
+          <h1>Área do Administrador</h1>
 
           <div className="adm-dados">
 
@@ -54,9 +54,14 @@ const LoginAdm = () => {
 
           </div>
 
+
           <div className="adm-button">
 
-            <Button> Entrar </Button>
+            <Link to="/principal-adm">
+
+              <Button> Entrar </Button>
+
+            </Link>
 
           </div>
 
@@ -101,7 +106,7 @@ const LoginAdm = () => {
 
             <Input
 
-              placeholder= "E-mail/Usuario"
+              placeholder="E-mail/Usuario"
               type="email"
               inputStyle="input--vazado"
               inputSize="input-g"
@@ -119,7 +124,11 @@ const LoginAdm = () => {
 
           <div className="adm-button">
 
-            <Button> Entrar </Button>
+            <Link to="/principal-adm">
+
+              <Button> Entrar </Button>
+
+            </Link>
 
           </div>
 
