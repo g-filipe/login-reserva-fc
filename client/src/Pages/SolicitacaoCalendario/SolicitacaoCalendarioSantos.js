@@ -1,6 +1,6 @@
 import './SolicitacaoCalendario.css';
 import { Button } from '../../components/Button/Button';
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Navbar2 } from '../../components/Navbar2/Navbar2';
 import img from '../../assets/home-intro.png'
 import ReactCalendarSantos from '../../components/Calendar/CalendarSantos';
 
@@ -14,7 +14,7 @@ const SolicitacaoCalendarioSantos = () => {
 
       <div>
 
-        <Navbar />
+        <Navbar2 />
 
       </div>
 
