@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AlertTriangle } from "../../assets/Icons/AlertTriangle/AlertTriangle";
 import "./WarningModal.css";
 

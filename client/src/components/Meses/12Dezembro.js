@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 import { Button } from "../Button/Button";
 
 
-export const Abril = () => {
+export const Dezembro = () => {
     
     const[dados, setDados] = useState([]) 
-     const mes = 3
+     
 
     useEffect(() =>{
         
@@ -26,7 +26,7 @@ export const Abril = () => {
     }, [])
     
     const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
-    
+    const mes = 11
 
     return(
         
@@ -35,7 +35,6 @@ export const Abril = () => {
 <div className ='Carrossel'>
 
 
-<h1 key={meses[mes]}> {meses[mes]} </h1>
 
 {dados.map((dados) =>{
     // console.log(dados.data[6])
@@ -46,7 +45,7 @@ export const Abril = () => {
 
 <ul>
 
-{dados.data[5]== '0' && dados.data[6] =='4'?
+{dados.data[5]=== '1' && dados.data[6] ==='2'?
 
 <li key={dados.id_agendamento}><Button
 buttonStyle = 'btn--agenda'

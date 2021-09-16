@@ -6,10 +6,11 @@ import { useEffect, useState } from "react";
 import { Button } from "../Button/Button";
 
 
-export const Outubro = () => {
+export const Abril = () => {
     
     const[dados, setDados] = useState([]) 
-     
+     const mes = 3
+
     useEffect(() =>{
         
         axios.get('http://localhost:3000/api/agendamentos/2')
@@ -25,7 +26,7 @@ export const Outubro = () => {
     }, [])
     
     const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
-    const mes = 9
+    
 
     return(
         
@@ -34,10 +35,9 @@ export const Outubro = () => {
 <div className ='Carrossel'>
 
 
-<h1 key={meses[mes]}> {meses[mes]} </h1>
 
 {dados.map((dados) =>{
-    // console.log([dados.data[5],dados.data[6]])
+    // console.log(dados.data[6])
     return ( 
         
           
@@ -45,7 +45,7 @@ export const Outubro = () => {
 
 <ul>
 
-{dados.data[5]== '1' && dados.data[6] =='0'?
+{dados.data[5]=== '0' && dados.data[6] ==='4'?
 
 <li key={dados.id_agendamento}><Button
 buttonStyle = 'btn--agenda'

@@ -35,8 +35,6 @@ export const Fevereiro = () => {
         <div className='Carrossel'>
 
 
-            <h1 key={meses[mes]}> {meses[mes]} </h1>
-
             {dados.map((dados) => {
                 // console.log(dados.data[6])
                 return (
@@ -46,7 +44,7 @@ export const Fevereiro = () => {
 
                         <ul>
 
-                            {dados.data[5] == '0' && dados.data[6] == '2' ?
+                            {dados.data[5] === '0' && dados.data[6] === '2' ?
 
                                 <li key={dados.id_agendamento}><Button
                                     buttonStyle='btn--agenda'

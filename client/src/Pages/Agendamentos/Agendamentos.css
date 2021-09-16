@@ -1,0 +1,199 @@
+
+.App{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'calibri';
+  font-size: 1px;
+  font-weight: regular;
+  text-decoration: none; 
+  width: 100vw;
+  height: 100vh; 
+}
+
+.seusagnd-container{
+  display: none;
+}
+
+.seusagnd-spa-home{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+
+
+.seusagnd-spa-home-logo img{
+max-width: 1100px;
+
+}
+
+.seusagnd-spa-home-right { 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 50px;
+  padding: 20px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.seusagnd-card{
+    
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  max-height: 600px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  width: 367px;
+  object-fit: cover;
+  
+}
+
+.seusagnd-spa-home-right h1{
+  font-size: 35px;
+  background: transparent;
+  margin-bottom: 40px;
+  color: #FE4400;
+  text-align:center;
+}
+
+
+
+  
+ 
+.seusagnd-figure{
+    
+  display: flex;
+  justify-content: center;
+        
+}
+
+.seusagnd-text h1{
+  font-size: 35px;
+  background: transparent;
+  color: #FE4400;
+
+font-weight: 500;
+text-align: center;
+margin-bottom: 45px;
+margin-top: 170px;
+/* margin-top: 100px; */
+}
+
+.seusagnd-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+
+.seusagnd-spa-home-right button:hover {
+  background-color: #6063AC;
+  color: #EFF2F5;
+  cursor: pointer;
+}
+
+.w-modal-text{
+  text-align: center;
+  margin: 16px;
+  
+}
+
+.w-modal-text h1{
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 5px;
+}
+
+.w-modal-text h2{
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+@media(max-width: 994px){
+
+ 
+  .w-modal-text{
+    text-align: center;
+    margin: 16px;
+    
+  }
+  
+  .w-modal-text h1{
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 5px;
+    
+  }
+
+  .w-modal-text h2{
+    font-weight: 500;
+    color: #2a2a2a;
+  }
+
+  .seusagnd-spa-home{
+    display: none;
+  }
+
+  .seusagnd-container {
+    
+    background:#FFF;
+    height: 100vh;
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  .seusagnd-card{
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    /* margin-top: 137px ; */
+    max-height: 600px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    width: 367px;
+    object-fit: cover;
+    
+  }
+  .seusagnd-card h1{
+    
+    font-size: 25px;
+    margin-bottom: 25px;
+
+  }
+  
+  
+.seusagnd-text{
+  margin-top: 100px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  max-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .seusagnd-text h1{
+  font-size: 50px;
+
+} */
+  
+.seusagnd-text h4{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #2a2a2a;;
+  width: 294px;
+}
+  
+}
+  
+  
