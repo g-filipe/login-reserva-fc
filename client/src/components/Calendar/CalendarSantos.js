@@ -1,6 +1,6 @@
 import React from "react";
 import Calendar from 'react-calendar';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Calendar.css';
 import { Button } from "../Button/Button";
 import axios from "axios";
@@ -10,6 +10,24 @@ import { Link } from "react-router-dom";
 
 export const ReactCalendarSantos = () => {
 
+
+//     const [dados, setDados] = useState([])
+
+//     useState(() => {
+
+//         axios.get(`http://localhost:3000/api/calendario/vagas/1?data=${dia}`)
+//             .then(res => {
+//                 console.log(res)
+//                 setDados(res.data)
+
+//             })
+//             .catch(err => {
+//                 console.log(err)
+//             })
+
+//     }, [])
+
+// console.log(dados)
 
     // Conexão com db
 
