@@ -5,6 +5,7 @@ import LoginColaborador from "./Pages/LoginColaborador/LoginColaborador";
 import LoginAdm from "./Pages/LoginAdm/LoginAdm";
 import Home from "./Pages/Prototipo/Home";
 import PrincipalAdm from "./Pages/PrincipalAdm/PrincipalAdm";
+import PrincipalColaborador from "./Pages/PrincipalColaborador/PrincipalColaborador";
 import ConfirmaAgenda from "./Pages/ConfirmaAgenda/ConfirmaAgenda";
 import ConfirmaAlt from "./Pages/ConfirmaAlt/ConfirmaAlt";
 import CancelaAgenda from "./Pages/CancelaAgenda/CancelaAgenda";
@@ -26,6 +27,7 @@ const Routes = () => {
                 <Route path="/login-adm" component={LoginAdm} />
                 <Route path="/login-colaborador" component={LoginColaborador} />
                 <Route path="/principal-adm" component={PrincipalAdm} />
+                <Route path="/principal-colaborador" component={PrincipalColaborador} />
                 <Route path="/confirma-alt" component={ConfirmaAlt} />
                 <Route path="/confirma-agenda" component={ConfirmaAgenda} />
                 <Route path="/cancela-agenda" component={CancelaAgenda} />

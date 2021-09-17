@@ -83,7 +83,7 @@ export const ReactCalendarSP = () => {
                 </Button>
 
             </Modal>}
-            
+
 
             <div className='calendar'>
 
@@ -113,11 +113,13 @@ export const ReactCalendarSP = () => {
                         buttonSize='btn--m'
                     > Continuar </Button>
 
-                    <Button
-                        buttonStyle='btn--vazado'
-                        buttonSize='btn--m'
-                    > Voltar </Button>
+                    <Link to='/seleciona-unidade'>
 
+                        <Button
+                            buttonStyle='btn--vazado'
+                            buttonSize='btn--m'
+                        > Voltar </Button>
+                    </Link>
 
                 </div>
 

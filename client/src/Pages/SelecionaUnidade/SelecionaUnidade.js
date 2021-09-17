@@ -10,9 +10,10 @@ import { Link } from 'react-router-dom';
 const SelecionaUnidade = () => {
 
 
-  const [unidade, setUnidade] = useState()
+  const [unidade, setUnidade] = useState(false)
   const SP = "/calendario-sp"
   const Santos = "/calendario-santos"
+const not = "/NotFound"
 
   return (
 
@@ -64,7 +65,7 @@ const SelecionaUnidade = () => {
             > Santos </Button>
 
 
-            <Link to={unidade}>
+            <Link to={unidade?unidade:not} >
 
               <Button
                 buttonSize='btn--m'
@@ -72,10 +73,14 @@ const SelecionaUnidade = () => {
 
             </Link>
 
-            <Button
-              buttonStyle='btn--vazado'
-              buttonSize='btn--m'
-            > Voltar </Button>
+            <Link to="/principal-adm">
+
+              <Button
+                buttonStyle='btn--vazado'
+                buttonSize='btn--m'
+              > Voltar </Button>
+
+            </Link>
 
           </div>
 
@@ -107,7 +112,7 @@ const SelecionaUnidade = () => {
             buttonStyle='btn--select'
             buttonSize='btn--m'
             onClick={() => {
-              setUnidade(SP);
+              setUnidade(SP);              
             }}
           > São Paulo </Button>
 
@@ -127,11 +132,13 @@ const SelecionaUnidade = () => {
 
           </Link>
 
-          <Button
-            buttonStyle='btn--vazado'
-            buttonSize='btn--m'
-          > Voltar </Button>
+          <Link to='principal-adm'>
 
+            <Button
+              buttonStyle='btn--vazado'
+              buttonSize='btn--m'
+            > Voltar </Button>
+          </Link>
 
         </div>
       </div>

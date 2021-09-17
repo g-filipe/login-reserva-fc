@@ -11,21 +11,23 @@ import api from '../../services/api';
 
 const Diretrizes = () => {
 
-  const [selected, setSelected] = useState("");
-  const [selected2, setSelected2] = useState("");
+  const [selected, setSelected] = useState(0);
+  const [selected2, setSelected2] = useState(0);
 
   const TotalSP = Math.round(selected * 600 / 100);
   const TotalSantos = Math.round(selected2 * 100 / 100);
 
   const [openWarningModal, setOpenWarningModal] = useState(false);
 
-   //Aqui cria estados para que eu possa pegar os dados da api e colocar neles
+  
+  
+  //Aqui cria estados para que eu possa pegar os dados da api e colocar neles
 
    const [capacidade, setCapacidade] = useState([]);
    const [vagas, setVagas] = useState(0);
- 
-   //Aqui pega os dados do escritório de SP, mas ainda não sei como enviar os dados que precisamos do front para cá,
-   // por enquanto eu coloquei o id_escritorio manualmente
+
+  // //  Aqui pega os dados do escritório de SP, mas ainda não sei como enviar os dados que precisamos do front para cá,
+  // //  por enquanto eu coloquei o id_escritorio manualmente
 
    useEffect(() => {
     let escritorio = "1";
@@ -36,7 +38,7 @@ const Diretrizes = () => {
     //eslint-disable-next-line
   }, []);
   console.log(capacidade + " " + vagas);
-  
+
   return (
 
     <div className="App">
@@ -121,7 +123,7 @@ const Diretrizes = () => {
 
                 <td>Santos, SP</td>
                 <td><DropdownSantos selected2={selected2} setSelected2={setSelected2} /></td>
-                <td className='table-right'>{selected2}</td>
+                <td className='table-right'>{TotalSantos}</td>
 
 
               </table>
@@ -169,6 +171,7 @@ const Diretrizes = () => {
           <Link to='confirma-alt'>
 
             <Button
+                        
               buttonSize='btn--p'
               buttonStyle='btn--solido'
             >Sim</Button>
@@ -209,13 +212,15 @@ const Diretrizes = () => {
               <tr>
 
                 <td>São Paulo, SP</td>
-                <td><DropdownSP selected={selected} setSelected={setSelected} /></td>
+                <td><DropdownSP selected={selected} setSelected={setSelected} 
+                 /></td>
                 <td className='table-right'>{TotalSP}</td>
 
               </tr>
 
               <td>Santos, SP</td>
-              <td><DropdownSantos selected2={selected2} setSelected2={setSelected2} /></td>
+              <td><DropdownSantos selected2={selected2} setSelected2={setSelected2}
+               /></td>
               <td className='table-right'>{selected2}</td>
 
 
@@ -227,13 +232,18 @@ const Diretrizes = () => {
 
             <Button
               buttonSize='btn--m'
-              onClick={() => { setOpenWarningModal(true); }}
+              onClick={() => { setOpenWarningModal(true) 
+            }}
             > Atualizar Diretrizes </Button>
 
-            <Button
-              buttonStyle='btn--vazado'
-              buttonSize='btn--m'
-            > Voltar </Button>
+            <Link to="/principal-adm">
+
+              <Button
+                buttonStyle='btn--vazado'
+                buttonSize='btn--m'
+              > Voltar </Button>
+
+            </Link>.
 
           </div>
 

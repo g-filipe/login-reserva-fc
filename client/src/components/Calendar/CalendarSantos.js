@@ -83,7 +83,7 @@ export const ReactCalendarSantos = () => {
                 </Button>
 
             </Modal>}
-            
+
 
             <div className='calendar'>
 
@@ -113,10 +113,13 @@ export const ReactCalendarSantos = () => {
                         buttonSize='btn--m'
                     > Continuar </Button>
 
-                    <Button
-                        buttonStyle='btn--vazado'
-                        buttonSize='btn--m'
-                    > Voltar </Button>
+
+                    <Link to='seleciona-unidade'>
+                        <Button
+                            buttonStyle='btn--vazado'
+                            buttonSize='btn--m'
+                        > Voltar </Button>
+                    </Link>
 
 
                 </div>

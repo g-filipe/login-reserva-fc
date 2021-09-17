@@ -1,11 +1,11 @@
-import './PrincipalAdm.css';
+import './PrincipalColaborador.css';
 import { Button } from '../../components/Button/Button';
-import { Navbar2 } from '../../components/Navbar2/Navbar2';
+import { Navbar3 } from '../../components/Navbar3/Navbar3';
 import img from '../../assets/servicos-digital.png'
 import { Bell } from '../../assets/Icons/Bell/bell';
 import { Link } from 'react-router-dom';
 
-const PrincipalAdm = () => {
+const PrincipalColaborador = () => {
 
 
     return (
@@ -14,7 +14,7 @@ const PrincipalAdm = () => {
 
             <div>
 
-                <Navbar2 />
+                <Navbar3 />
 
             </div>
 
@@ -57,7 +57,7 @@ const PrincipalAdm = () => {
                     </Link>
 
 
-                    <Link to='/agendamentos'>
+                    <Link to='/seleciona-unidade'>
 
 
                         <Button
@@ -77,42 +77,7 @@ const PrincipalAdm = () => {
                         </Button>
 
                     </Link>
-
-                    <Link to='/diretrizes'>
-
-                        <Button
-                            buttonStyle='btn--icon'
-                            buttonSize='btn--gg'>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-sliders">
-                                <line x1="4" y1="21" x2="4" y2="14">
-                                </line><line x1="4" y1="10" x2="4" y2="3">
-                                </line>
-                                <line x1="12" y1="21" x2="12" y2="12">
-                                </line><line x1="12" y1="8" x2="12" y2="3">
-                                </line>
-                                <line x1="20" y1="21" x2="20" y2="16">
-                                </line>
-                                <line x1="20" y1="12" x2="20" y2="3">
-                                </line>
-                                <line x1="1" y1="14" x2="7" y2="14">
-                                </line>
-                                <line x1="9" y1="8" x2="15" y2="8">
-                                </line>
-                                <line x1="17" y1="16" x2="23" y2="16">
-                                </line>
-                            </svg>
-
-                            Diretrizes
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-chevron-right3">
-                                <polyline points="9 18 15 12 9 6">
-                                </polyline>
-                            </svg>
-
-                        </Button>
-
-                    </Link>
+                  
 
                 </div>
             </div>
@@ -148,8 +113,6 @@ const PrincipalAdm = () => {
                     </Link>
 
 
-                   <Link to="/agendamentos">
-
                     <Button
                         buttonStyle='btn--icon'
                         buttonSize='btn--gg'
@@ -166,49 +129,11 @@ const PrincipalAdm = () => {
 
                     </Button>
 
-                    </Link>
-
-                    <Link to='/diretrizes'>
-
-                        <Button
-                            buttonStyle='btn--icon'
-                            buttonSize='btn--gg'>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-sliders">
-                                <line x1="4" y1="21" x2="4" y2="14">
-                                </line><line x1="4" y1="10" x2="4" y2="3">
-                                </line>
-                                <line x1="12" y1="21" x2="12" y2="12">
-                                </line><line x1="12" y1="8" x2="12" y2="3">
-                                </line>
-                                <line x1="20" y1="21" x2="20" y2="16">
-                                </line>
-                                <line x1="20" y1="12" x2="20" y2="3">
-                                </line>
-                                <line x1="1" y1="14" x2="7" y2="14">
-                                </line>
-                                <line x1="9" y1="8" x2="15" y2="8">
-                                </line>
-                                <line x1="17" y1="16" x2="23" y2="16">
-                                </line>
-                            </svg>
-
-                            Diretrizes
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-chevron-right3">
-                                <polyline points="9 18 15 12 9 6">
-                                </polyline>
-                            </svg>
-
-                        </Button>
-
-                    </Link>
-
-                </div>
+                   </div>
             </div>
 
         </div>
     );
 }
 
-export default PrincipalAdm;
+export default PrincipalColaborador;

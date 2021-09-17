@@ -1,0 +1,158 @@
+
+.App{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'calibri';
+    font-size: 1px;
+    font-weight: regular;
+    text-decoration: none;  
+  }
+  
+  .admcontainer{
+    display: none;
+  } 
+  
+  .adm-spa-home{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  
+  .adm-spa-home-logo img{
+  width: 400px;
+  /* border-radius: 25px;
+  border-bottom: 300px; */
+  /* margin-left: 80px; */
+  }
+  
+  .adm-spa-home-right { 
+  
+    /* background-color: transparent; */
+    /* border-radius: 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+    padding: 20px;
+    width: 30%;
+    /* height: 350px; */
+    border-radius: 10px;
+  
+  }
+  
+  .adm-spa-home-right h1{
+    font-size: 35px;
+    background: transparent;
+    margin-bottom: 40px;
+    color: #FE4400;
+    text-align:left;
+  }
+  
+  .ola h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2a2a2a;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-left: 10px;
+  
+  }
+  
+  /* .spa-home-right p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 220px;
+    color: #000;
+    text-align:left;
+  } */
+  
+  .adm-spa-home-right button:hover {
+    background-color: #6063AC;
+    color: #EFF2F5;
+    cursor: pointer;
+  }
+  
+  /* button {
+    line-height: 25px;
+  }
+  
+  button::before {
+    content: {Bell};
+  } */
+  
+  /* .feather.feather-bell{
+       
+    display: flex;
+    position: absolute;
+    top: 36%;
+}
+
+.feather.feather-chevron-right{
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 12px;
+}
+
+.feather.feather-chevron-right2{
+    display: flex;
+    margin-left: 55px;
+    margin-bottom: 12px;
+}
+
+.feather.feather-chevron-right3{
+    display: flex;
+    margin-left: 170px;
+    margin-bottom: 12px;
+}
+
+.feather.feather-calendar{
+    display: flex;
+    position: absolute;
+    top:48%
+}
+
+.feather.feather-sliders{
+    display: flex;
+    position: absolute;
+    top:60%
+} */
+
+
+
+  
+  @media(max-width: 994px){
+  
+      
+    .adm-spa-home{
+      display: none;
+    }
+  
+    .admcontainer {
+      
+      background:#FFF;
+      height: 100vh;
+      /* width: 100vw; */
+      display: flex;    
+      justify-content: center;
+    }
+    
+    
+    .admcard{
+      
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 116px;
+    }
+    
+           
+  }
+    
+    

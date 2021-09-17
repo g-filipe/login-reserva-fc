@@ -51,7 +51,11 @@ const LoginColaborador = () => {
 
           <div className="button">
 
+           <Link to="/principal-colaborador">
+           
             <Button> Entrar </Button>
+
+            </Link>
 
           </div>
 
